@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="utf-8">
+    <title>Название проекта</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link href="css/normalize.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+</head>
+<body>
+    <main class="main">
+        <header class="header">
+            <div class="container header__container">
+                <div class="header__top">
+                    <nav class="subnavigation-wrapper">
+                        <ul class="subnavigation">
+                            <li class="subnavigation__item subnavigation__item--active">
+                                <a class="subnavigation__link" href="#">Академия</a>
+                            </li>
+                            <li class="subnavigation__item">
+                                <a class="subnavigation__link" href="#">Поступить в академию</a>
+                            </li>
+                            <li class="subnavigation__item">
+                                <a class="subnavigation__link" href="#">Клуб</a>
+                            </li>
+                            <li class="subnavigation__item">
+                                <a class="subnavigation__link" href="#">Арена</a>
+                            </li>
+                            <li class="subnavigation__item">
+                                <a class="subnavigation__link" href="#">Клубная атрибутика</a>
+                            </li>
+                        </ul>
+                    </nav>
+                    <a class="login" href="#">Личный кабинет</a>
+                </div>
+                <a class="logo header__logo" href="#">
+                    <img src="img/logo.png" width="144" height="144">
+                </a>
+                <nav class="navigation">
+                    <ul class="navigation__list">
+                        <li class="navigation__item navigation__item--active">
+                            <a class="navigation__link" href="#">Расписание</a>
+                        </li>
+                        <li class="navigation__item">
+                            <a class="navigation__link" href="#">Турниры</a>
+                        </li>
+                        <li class="navigation__item">
+                            <a class="navigation__link" href="#">Медиа</a>
+                        </li>
+                        <li class="navigation__item">
+                            <a class="navigation__link" href="#">Трансляции</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        <div class="main-container">
+            <div class="main-content">
+                <section class="promo">
+                    <h1 class="promo__title">Хоккейная академия им. Владимира Петрова</h1>
+                    <div class="promo__wrapper container">
+                        <div class="promo-calendar">
+                            <a class="promo-calendar__title" href="#">Первенство Московской области среди юниоров 2002 г.p.</a>
+                            <p class="promo-calendar__subtitle">Группа А</p>
+                            <div class="promo-calendar__main">
+                                <a class="promo-calendar__team" href="#">
+                                    <img class="promo-calendar__logo" src="img/logo.png" width="110" height="110">
+                                    <p class="promo-calendar__team-name">Академия Петрова</p>
+                                </a>
+                                <a class="promo-calendar__middle" href="#">
+                                    <div class="promo-calendar__date">07.09.2019</div>
+                                    <div class="promo-calendar__middle-main">12:00</div>
+                                </a>
+                                <a class="promo-calendar__team" href="#">
+                                    <img class="promo-calendar__logo" src="img/logo.png" width="110" height="110">
+                                    <p class="promo-calendar__team-name">"Химик" Воскресенск</p>
+                                </a>
+                            </div>
+                            <p class="promo-calendar__place">Ледовый дворец "Сокольники"</p>
+                        </div>
+                        <div class="news-slider">
+                            <ul class="news-slider__list">
+                                <li class="news-slider__item">
+                                    <a class="news-slider__link" href="#">
+                                        <div class="news-slider__picture">
+                                            <img class="news-slider__img" src="img/dev-img.png" width="285" height="190">
+                                            <div class="news-slider__date">
+                                                <svg class="news-slider__icon" width="52" height="79"><use xlink:href="/img/sprite.svg#news-date"></use></svg>
+                                                <!--<div class="news-slider__date-top">
+                                                    <p class="news-slider__date-number">12</p>
+                                                    <p>августа</p>
+                                                </div>
+                                                <div class="news-slider__date-bottom">2019</div>-->
+                                            </div>
+                                        </div>
+                                        <div class="news-slider__content">
+                                            <p class="news-slider__title">Команды нашей школы уехали на сборы</p>
+                                            <p class="news-slider__description">Команды нашей школы 2004,2005,2006 и 2007г.р. сегодня уехали на тренировочные сборы в Кратово. </p>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="news-slider__item">
+                                    <a class="news-slider__link" href="#">
+                                        <div class="news-slider__picture">
+                                            <img class="news-slider__img" src="img/dev-img.png" width="285" height="190">
+                                            <div class="news-slider__date">
+                                                <div class="news-slider__date-top">
+                                                    <p class="news-slider__date-number">12</p>
+                                                    <p>августа</p>
+                                                </div>
+                                                <div class="news-slider__date-bottom">2019</div>
+                                            </div>
+                                        </div>
+                                        <div class="news-slider__content">
+                                            <p class="news-slider__title">Команды нашей школы уехали на сборы</p>
+                                            <p class="news-slider__description">Команды нашей школы 2004,2005,2006 и 2007г.р. сегодня уехали на тренировочные сборы в Кратово. </p>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="news-slider__item">
+                                    <a class="news-slider__link" href="#">
+                                        <div class="news-slider__picture">
+                                            <img class="news-slider__img" src="img/dev-img.png" width="285" height="190">
+                                            <div class="news-slider__date">
+                                                <svg class="news-slider__icon" width="52" height="79"><use xlink:href="css/img/sprite.svg#id"></use></svg>
+                                                <div class="news-slider__date-top">
+                                                    <p class="news-slider__date-number">12</p>
+                                                    <p>августа</p>
+                                                </div>
+                                                <div class="news-slider__date-bottom">2019</div>
+                                            </div>
+                                        </div>
+                                        <div class="news-slider__content">
+                                            <p class="news-slider__title">Команды нашей школы уехали на сборы</p>
+                                            <p class="news-slider__description">Команды нашей школы 2004,2005,2006 и 2007г.р. сегодня уехали на тренировочные сборы в Кратово. </p>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="news-slider__item">
+                                    <a class="news-slider__link" href="#">
+                                        <div class="news-slider__picture">
+                                            <img class="news-slider__img" src="img/dev-img.png" width="285" height="190">
+                                            <div class="news-slider__date">
+                                                <div class="news-slider__date-top">
+                                                    <p class="news-slider__date-number">12</p>
+                                                    <p>августа</p>
+                                                </div>
+                                                <div class="news-slider__date-bottom">2019</div>
+                                            </div>
+                                        </div>
+                                        <div class="news-slider__content">
+                                            <p class="news-slider__title">Команды нашей школы уехали на сборы</p>
+                                            <p class="news-slider__description">Команды нашей школы 2004,2005,2006 и 2007г.р. сегодня уехали на тренировочные сборы в Кратово. </p>
+                                        </div>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </section>
+                <section class="banner">
+                    <a class="banner__link" href="#">
+                        <img src="" width="" height="">
+                    </a>
+                </section>
+                <section class="calendar-block">
+                    <div class="tabs">
+                        <div class="tabs__top">
+                            <h2 class="subtitle tabs__title">Календарь игр</h2>
+                            <ul class="tabs__navigation">
+                                <li class="tabs__item tabs__item--active">
+                                    <a class="tabs__link" href="#">Будущие матчи</a>
+                                </li>
+                                <li class="tabs__item">
+                                    <a class="tabs__link" href="#">Прошедшие матчи</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="tabs__content">
+                            <div class="tabs__pane">
+                                <div class="calendar">
+                                    <div class="calendar__main">
+                                        <a class="calendar__team calendar__team--left" href="#">
+                                            <p class="calendar__team-name">Академия Петрова</p>
+                                            <img src="" width="" hidden>
+                                        </a>
+                                        <a class="calendar__score" href="#">
+                                            <div class="calendar__date">07.09.2019</div>
+                                            <div class="calendar__score-main">12:00</div>
+                                        </a>
+                                        <a class="calendar__team" href="#">
+                                            <p class="calendar__team-name">Академия Петрова</p>
+                                            <img src="" width="" hidden>
+                                        </a>
+                                    </div>
+                                    <div class="calendar__sidebar">
+                                        <a class="calendar__tournament" href="#">Первенство московской области среди юниоров 2002 г.р.</a>
+                                        <a class="calendar__group" href="#">Группа А</a>
+                                        <a class="calendar__place" href="#">Ледовый дворец «Сокольники»</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tabs__pane"></div>
+                        </div>
+                    </div>
+                    <a class="button" href="#">Смотреть весь календарь</a>
+                </section>
+                <section class="index-media">
+                    <div class="tabs">
+                        <div class="tabs__top">
+                            <h2 class="subtitle tabs__title">Актуальное</h2>
+                            <ul class="tabs__navigation">
+                                <li class="tabs__item tabs__item--active">
+                                    <a class="tabs__link" href="#">Новости</a>
+                                </li>
+                                <li class="tabs__item">
+                                    <a class="tabs__link" href="#">Фото</a>
+                                </li>
+                                <li class="tabs__item">
+                                    <a class="tabs__link" href="#">Видео</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="tabs__content">
+                            <div class="tabs__pane">
+                                <div class=""></div>
+                                <a class="button" href="#">Смотреть весь новости</a>
+                            </div>
+                            <div class="tabs__pane"></div>
+                        </div>
+                    </div>
+                </section>
+                <section class="schedule-block">
+                    <div class="tabs">
+                        <div class="tabs__top">
+                            <h2 class="subtitle tabs__title">Расписание тренировок</h2>
+                            <ul class="tabs__navigation">
+                                <li class="tabs__item tabs__item--active">
+                                    <a class="tabs__link" href="#">Платные секции</a>
+                                </li>
+                                <li class="tabs__item">
+                                    <a class="tabs__link" href="#">Бесплатные секции</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="tabs__content">
+                            <div class="tabs__pane">
+                                <div class="schedule">
+                                    <div class="schedule__top">
+                                        <table class="table table--schedule">
+                                            <thead>
+                                                <tr class="schedule__head">
+                                                    <th class="schedule__cell">Год</th>
+                                                    <th class="schedule__cell">Пн 29.07</th>
+                                                    <th class="schedule__cell">Вт 30.07</th>
+                                                    <th class="schedule__cell">Ср 31.07</th>
+                                                    <th class="schedule__cell">Чe 31.07</th>
+                                                    <th class="schedule__cell">Ср 31.07</th>
+                                                </tr>
+                                            </thead>
+                                        </table>
+                                    </div>
+                                    <div class="schedule__content">
+                                        <div class="schedule__content-row">
+                                            <table class="table table--schedule">
+                                                <tbody>
+                                                    <tr class="schedule__row">
+                                                        <td class="schedule__cell">Юниоры</td>
+                                                        <td class="schedule__cell">
+                                                            <div class="schedule__title">13:30-15:00</div>
+                                                            <div class="schedule__text">Лед Б</div>
+                                                        </td>
+                                                        <td class="schedule__cell">
+                                                            <div class="schedule__title">13:30-15:00</div>
+                                                            <div class="schedule__text">Лед Б</div>
+                                                        </td>
+                                                        <td class="schedule__cell">
+                                                            <div class="schedule__title">13:30-15:00</div>
+                                                            <div class="schedule__text">Лед Б</div>
+                                                        </td>
+                                                        <td class="schedule__cell">
+                                                            <div class="schedule__title">13:30-15:00</div>
+                                                            <div class="schedule__text">Лед Б</div>
+                                                        </td>
+                                                        <td class="schedule__cell">
+                                                            <div class="schedule__title">13:30-15:00</div>
+                                                            <div class="schedule__text">Лед Б</div>
+                                                        </td>
+                                                        <td class="schedule__cell">
+                                                            <div class="schedule__title">13:30-15:00</div>
+                                                            <div class="schedule__text">Лед Б</div>
+                                                        </td>
+                                                        <td class="schedule__cell">
+                                                            <div class="schedule__title">13:30-15:00</div>
+                                                            <div class="schedule__text">Лед Б</div>
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+                                </div>
+                                <a class="button" href="#">Смотреть весь календарь</a>
+                            </div>
+                            <div class="tabs__pane"></div>
+                        </div>
+                    </div>
+                </section>
+                <section class="stats-block">
+                    <h2 class="subtitle">Статистика турниров</h2>
+                    <div class="stats-slider">
+                        <div class="stats-slider__navigation">
+                            <a class="stats-slider__arrow"></a>
+                            <a class="stats-slider__arrow"></a>
+                        </div>
+                        <ul class="stats-slider__list">
+                            <li class="stats-slider__item">
+                                <a class="stats-slider__link" href="#">
+                                    <img src="" width="" height="">
+                                    <div class="stats-slider__content">
+                                        <p class="stats-slider__title">Константин Константиновский</p>
+                                        <div class="stats-slider__bottom">
+                                            <div class="stats-slider__block">
+                                                <span class="stats-slider__unit">Игр</span>
+                                                <span class="stats-slider__value">155</span>
+                                            </div>
+                                            <div class="stats-slider__block">
+                                                <span class="stats-slider__unit">Пропущено</span>
+                                                <span class="stats-slider__value">155</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </section>
+                <section class="socials">
+                    <h2 class="subtitle">Мы в соцсетях</h2>
+                    <ul class="socials__list">
+                        <li class="socials__item"></li>
+                        <li class="socials__item"></li>
+                        <li class="socials__item"></li>
+                    </ul>
+                </section>
+                <section class="partners">
+                    <h2 class="subtitle">Партнёры</h2>
+                    <ul class="partners__list">
+                        <li class="partners__item">
+                            <a class="partners__link" href="#">
+                                <img src="" width="" height="">
+                            </a>
+                        </li>
+                    </ul>
+                </section>
+            </div>
+        </div>
+        <footer class="footer">
+            <nav class="footer__navigation">
+                <ul class="footer__navigation-list">
+                    <li class="footer__navigation-item">
+                        <a class="footer__navigation-link" href="#">Об академии</a>
+                    </li>
+                    <li class="footer__navigation-item">
+                        <a class="footer__navigation-link" href="#">О Владимире Петрове</a>
+                    </li>
+                    <li class="footer__navigation-item">
+                        <a class="footer__navigation-link" href="#">Арена</a>
+                    </li>
+                </ul>
+                <ul class="footer__navigation-list">
+                    <li class="footer__navigation-item">
+                        <a class="footer__navigation-link" href="#">Руководство</a>
+                    </li>
+                    <li class="footer__navigation-item">
+                        <a class="footer__navigation-link" href="#">Партнёры</a>
+                    </li>
+                    <li class="footer__navigation-item">
+                        <a class="footer__navigation-link" href="#">Контакты</a>
+                    </li>
+                </ul>
+                <ul class="footer__navigation-list">
+                    <li class="footer__navigation-item">
+                        <a class="footer__navigation-link" href="#">Клуб</a>
+                    </li>
+                    <li class="footer__navigation-item">
+                        <a class="footer__navigation-link" href="#">Турниры</a>
+                    </li>
+                    <li class="footer__navigation-item">
+                        <a class="footer__navigation-link" href="#">Медиа</a>
+                    </li>
+                </ul>
+                <ul class="footer__navigation-list">
+                    <li class="footer__navigation-item">
+                        <a class="footer__navigation-link" href="#">Поступить а Академию</a>
+                    </li>
+                    <li class="footer__navigation-item">
+                        <a class="footer__navigation-link" href="#">Расписание</a>
+                    </li>
+                    <li class="footer__navigation-item">
+                        <a class="footer__navigation-link" href="#">Трансляции</a>
+                    </li>
+                    <li class="footer__navigation-item">
+                        <a class="footer__navigation-link" href="#">Клубная атрибутика</a>
+                    </li>
+                </ul>
+            </nav>
+            <div class="footer__aside">
+                <a class="login" href="#">Личный кабинет</a>
+                <a class="logo footer__logo" href="#">
+                    <img src="" width="" height="">
+                </a>
+            </div>
+        </footer>
+    </main>
+</body>
+</html>

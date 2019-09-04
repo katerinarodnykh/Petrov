@@ -1,0 +1,6 @@
+<svg class="svg-sprite" style="display: none;">
+    <symbol id="news-date" xmlns="http://www.w3.org/2000/svg">
+        <path fill="#c24244" d="M0 79V0h52v79l-26-8z"/>
+    </symbol>
+</svg>
+<!--Вставка <svg class="" width="" height=""><use xlink:href="css/img/sprite.svg#id"></use></svg>-->
