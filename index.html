@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <link href="css/normalize.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
+    <link href="css/tiny-slider.min.css" rel="stylesheet">
 </head>
 <body>
     <main class="main">
@@ -79,18 +80,28 @@
                             <p class="promo-calendar__place">Ледовый дворец "Сокольники"</p>
                         </div>
                         <div class="news-slider">
-                            <ul class="news-slider__list">
+                            <ul class="news-slider__list js-tiny-slider"
+                                data-items="3"
+                                data-slide-by="3"
+                                data-axis="vertical"
+                                data-loop="true"
+                                data-autoplay="true"
+                                data-autoplay-timeout="5000"
+                                data-autoplay-over-pause="true"
+                                data-speed="750"
+                                data-mouse-drag="true"
+                            >
                                 <li class="news-slider__item">
                                     <a class="news-slider__link" href="#">
                                         <div class="news-slider__picture">
                                             <img class="news-slider__img" src="img/dev-img.png" width="285" height="190">
                                             <div class="news-slider__date">
                                                 <svg class="news-slider__icon" width="52" height="79"><use xlink:href="img/sprite.svg#news-date"></use></svg>
-                                                <!--<div class="news-slider__date-top">
-                                                    <p class="news-slider__date-number">12</p>
-                                                    <p>августа</p>
+                                                <div class="news-slider__date-text">
+                                                    <p class="news-slider__number">12</p>
+                                                    <p class="news-slider__month">августа</p>
+                                                    <div class="news-slider__year">2019</div>
                                                 </div>
-                                                <div class="news-slider__date-bottom">2019</div>-->
                                             </div>
                                         </div>
                                         <div class="news-slider__content">
@@ -104,11 +115,12 @@
                                         <div class="news-slider__picture">
                                             <img class="news-slider__img" src="img/dev-img.png" width="285" height="190">
                                             <div class="news-slider__date">
-                                                <div class="news-slider__date-top">
-                                                    <p class="news-slider__date-number">12</p>
-                                                    <p>августа</p>
+                                                <svg class="news-slider__icon" width="52" height="79"><use xlink:href="img/sprite.svg#news-date"></use></svg>
+                                                <div class="news-slider__date-text">
+                                                    <p class="news-slider__number">12</p>
+                                                    <p class="news-slider__month">августа</p>
+                                                    <div class="news-slider__year">2019</div>
                                                 </div>
-                                                <div class="news-slider__date-bottom">2019</div>
                                             </div>
                                         </div>
                                         <div class="news-slider__content">
@@ -122,12 +134,12 @@
                                         <div class="news-slider__picture">
                                             <img class="news-slider__img" src="img/dev-img.png" width="285" height="190">
                                             <div class="news-slider__date">
-                                                <svg class="news-slider__icon" width="52" height="79"><use xlink:href="css/img/sprite.svg#id"></use></svg>
-                                                <div class="news-slider__date-top">
-                                                    <p class="news-slider__date-number">12</p>
-                                                    <p>августа</p>
+                                                <svg class="news-slider__icon" width="52" height="79"><use xlink:href="img/sprite.svg#news-date"></use></svg>
+                                                <div class="news-slider__date-text">
+                                                    <p class="news-slider__number">12</p>
+                                                    <p class="news-slider__month">августа</p>
+                                                    <div class="news-slider__year">2019</div>
                                                 </div>
-                                                <div class="news-slider__date-bottom">2019</div>
                                             </div>
                                         </div>
                                         <div class="news-slider__content">
@@ -141,11 +153,12 @@
                                         <div class="news-slider__picture">
                                             <img class="news-slider__img" src="img/dev-img.png" width="285" height="190">
                                             <div class="news-slider__date">
-                                                <div class="news-slider__date-top">
-                                                    <p class="news-slider__date-number">12</p>
-                                                    <p>августа</p>
+                                                <svg class="news-slider__icon" width="52" height="79"><use xlink:href="img/sprite.svg#news-date"></use></svg>
+                                                <div class="news-slider__date-text">
+                                                    <p class="news-slider__number">12</p>
+                                                    <p class="news-slider__month">августа</p>
+                                                    <div class="news-slider__year">2019</div>
                                                 </div>
-                                                <div class="news-slider__date-bottom">2019</div>
                                             </div>
                                         </div>
                                         <div class="news-slider__content">
@@ -413,5 +426,8 @@
             </div>
         </footer>
     </main>
+    <script src="plugins/jquery-3.4.1.min.js"></script>
+    <script src="plugins/tiny-slider.min.js"></script>
+    <script src="js/tiny-slider.js"></script>
 </body>
 </html>
