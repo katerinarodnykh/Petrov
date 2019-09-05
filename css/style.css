@@ -1,21 +1,45 @@
 @font-face {
-  font-family: "Open Sans";
+  font-family: "Verdana";
   font-weight: 400;
   font-style: normal;
   font-display: swap;
-  src: local('Open Sans Regular'), local('OpenSans-Regular'),
-  url("fonts/open-sans-regular.woff2") format("woff2"),
-  url("fonts/open-sans-regular.ttf") format("ttf");
+  src: local('Verdana Regular'), local('Verdana-Regular'),
+  url("../fonts/Verdana.woff2") format("woff2"),
+  url("../fonts/Verdana.woff") format("woff"),
+  url("../fonts/Verdana.ttf") format("ttf");
 }
 
 @font-face {
-  font-family: "Open Sans";
-  font-weight: 600;
+  font-family: "Verdana";
+  font-weight: 700;
   font-style: normal;
   font-display: swap;
-  src: local('Open Sans SemiBold'), local('OpenSans-SemiBold'),
-  url("fonts/open-sans-600.woff2") format("woff2"),
-  url("fonts/open-sans-600.ttf") format("ttf");
+  src: local('Verdana Bold'), local('Verdana-Bold'),
+  url("../fonts/Verdana-Bold.woff2") format("woff2"),
+  url("../fonts/Verdana-Bold.woff2") format("woff"),
+  url("../fonts/Verdana-Bold.ttf") format("ttf");
+}
+
+@font-face {
+  font-family: "Geometria";
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+  src: local('Geometria Regular'), local('Geometria-Regular'),
+  url("../fonts/Geometria.woff2") format("woff2"),
+  url("../fonts/Geometria.woff2") format("woff"),
+  url("../fonts/Geometria.ttf") format("ttf");
+}
+
+@font-face {
+  font-family: "Geometria";
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+  src: local('Geometria Medium'), local('Geometria-Medium'),
+  url("../fonts/Geometria-Medium.woff2") format("woff2"),
+  url("../fonts/Geometria-Medium.woff2") format("woff"),
+  url("../fonts/Geometria-Medium.ttf") format("ttf");
 }
 
 html {
@@ -60,14 +84,17 @@ html {
 }
 
 .main {
-  font-family: "Open Sans", "Arial", sans-serif;
+  font-family: "Verdana", "Arial", sans-serif;
   font-size: 14px;
-  line-height: 21px;
+  line-height: 18px;
   color: var(--black);
   font-style: normal;
   font-weight: 400;
   background-color: var(--white);
   min-width: 1270px;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
 }
 
 a {
@@ -86,12 +113,73 @@ img {
   padding: 0 15px;
 }
 
+.container--padding {
+  padding: 90px 15px 80px 15px;
+}
+
+.button {
+  font-family: "Geometria", "Arial", sans-serif;
+  font-weight: 500;
+  letter-spacing: 1.68px;
+  width: 340px;
+  height: 50px;
+  background-color: var(--red);
+  color: var(--white);
+  font-size: 12px;
+  text-transform: uppercase;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 60px auto 0 auto;
+}
+
 .subtitle {
+  font-family: "Geometria", "Arial", sans-serif;
+  font-weight: 500;
   font-size: 28px;
   line-height: 30px;
-  font-weight: 500;
   letter-spacing: 4px;
   color: var(--red);
+  margin: 0 0 60px 0;
+  text-transform: uppercase;
+}
+
+.tabs__top .subtitle {
+  margin: 0;
+}
+
+.subtitle--light {
+  color: var(--white);
+}
+
+.tabs__top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 0 40px 0;
+}
+
+.tabs__navigation {
+  list-style: none;
+  display: flex;
+}
+
+.tabs__item:not(:last-child) {
+  margin: 0 25px 0 0;
+}
+
+.tabs__link {
+  display: flex;
+  align-items: center;
+  padding: 0 20px;
+  height: 42px;
+  font-family: "Geometria", "Arial", sans-serif;
+  font-weight: 500;
+  font-size: 12px;
+  color: var(--red);
+  letter-spacing: 1.7px;
+  border: 2px solid var(--red);
+  text-transform: uppercase;
 }
 
 .header {
@@ -153,6 +241,7 @@ img {
 }
 
 .navigation__link {
+  font-family: "Verdana", "Arial", sans-serif;
   display: block;
   color: var(--white);
   font-size: 16px;
@@ -207,6 +296,44 @@ img {
   right: 162px;
 }
 
+.footer {
+  margin: auto 0 0 0;
+  background-color: var(--main);
+  padding: 42px 56px;
+}
+
+.footer__container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer__navigation {
+  display: flex;
+}
+
+.footer__navigation-list {
+  list-style: none;
+  margin: 0 110px 0 0;
+}
+
+.footer__navigation-link {
+  font-size: 13px;
+  line-height: 16px;
+  display: block;
+  padding: 8px;
+  color: rgba(var(--white-opacity), 0.5);
+}
+
+.footer__aside {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.footer__login {
+  margin: 0 0 24px 0;
+}
+
 .promo {
   margin-top: -180px;
   position: relative;
@@ -219,6 +346,8 @@ img {
 }
 
 .promo__title {
+  font-family: "Geometria", "Arial", sans-serif;
+  font-weight: 500;
   margin: 0 0 60px 0;
   text-align: center;
   font-size: 50px;
@@ -233,6 +362,8 @@ img {
 }
 
 .promo-calendar {
+  font-family: "Geometria", "Arial", sans-serif;
+  font-weight: 500;
   flex-shrink: 0;
   width: 505px;
   height: 100%;
@@ -247,12 +378,10 @@ img {
   color: var(--white);
   text-transform: uppercase;
   font-size: 20px;
-  font-weight: 500;
 }
 
 .promo-calendar__subtitle {
   font-size: 13px;
-  font-weight: 500;
   color: var(--white);
 }
 
@@ -351,8 +480,9 @@ img {
 }
 
 .news-slider__title {
-  font-size: 18px;
+  font-family: "Geometria", "Arial", sans-serif;
   font-weight: 500;
+  font-size: 18px;
   margin: 0 0 20px 0;
 }
 
@@ -360,6 +490,255 @@ img {
   font-size: 12px;
   line-height: 18px;
 }
+
+/* Баннер */
+
+.banner {
+  padding: 50px 15px 0 15px;
+}
+
+.banner__img {
+  display: block;
+}
+
+/* Социальные сети */
+
+.socials {
+  background:  var(--main) url("../img/backgrounds/back-1.png");
+  background-size: cover;
+  background-position: -437px 100px;
+  background-attachment: fixed;
+  background-blend-mode: overlay;
+}
+
+.socials__list {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+}
+
+.socials__item {
+  width: 400px;
+  height: 508px;
+  background-color: var(--white);
+}
+
+/* Партнёры */
+
+.partners__list {
+  list-style: none;
+  display: flex;
+}
+
+.partners__item {
+  display: flex !important;
+  justify-content: center;
+}
+
+.partners__img {
+  display: block;
+}
+
+/* Календарь игр на главной */
+
+.calendar {
+  border-top: 1px solid rgba(var(--main-opacity), 0.45);
+}
+
+.calendar__item,
+.calendar__main,
+.calendar__team {
+  display: flex;
+}
+
+.calendar__item {
+  font-family: "Geometria", "Arial", sans-serif;
+  font-weight: 500;
+  height: 160px;
+  align-items: center;
+  border-bottom: 1px solid rgba(var(--main-opacity), 0.45);
+}
+
+.calendar__main {
+  position: relative;
+  width: 730px;
+  flex-shrink: 0;
+  justify-content: center;
+  align-items: center;
+}
+
+.calendar__main:after {
+  content: '';
+  position: absolute;
+  width: 1px;
+  height: 120px;
+  background-color: rgba(var(--main-opacity), 0.6);
+  top: 50%;
+  margin-top: -60px;
+  right: 0;
+}
+
+.calendar__main:before {
+  content: '';
+  position: absolute;
+  width: 1px;
+  height: 160px;
+  transform: skewX(-20deg);
+  background-color: rgba(var(--black-opacity), 0.1);
+  top: 50%;
+  margin-top: -80px;
+  left: 50%;
+}
+
+.calendar__team {
+  align-items: center;
+  flex-shrink: 0;
+  width: calc((100% - 160px)/2);
+}
+
+.calendar__img {
+  display: block;
+  margin: 0 15px;
+}
+
+.calendar__team--left .calendar__img {
+  order: 2;
+}
+
+.calendar__team-name {
+  padding: 0 15px;
+  font-size: 15px;
+  line-height: 20px;
+  text-transform: uppercase;
+}
+
+.calendar__team--left .calendar__team-name {
+  text-align: right;
+}
+
+.calendar__score {
+  height: 70px;
+  width: 160px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  background-color: var(--white);
+}
+
+.calendar__date {
+  font-size: 12px;
+  line-height: 26px;
+}
+
+.calendar__score-main {
+  font-size: 25px;
+  line-height: 26px;
+}
+
+.calendar__sidebar {
+  padding: 0 12px 0 52px;
+}
+
+.calendar__tournament,
+.calendar__group,
+.calendar__place {
+  display: block;
+}
+
+.calendar__tournament {
+  font-size: 15px;
+  line-height: 20px;
+  margin: 0 0 10px 0;
+}
+
+.calendar__place {
+  position: relative;
+  font-size: 15px;
+  line-height: 25px;
+  padding: 24px 0 0 0;
+}
+
+.calendar__group {
+  font-size: 11px;
+  letter-spacing: 1.32px;
+  text-transform: uppercase;
+  color: var(--red);
+}
+
+.calendar__place:after {
+  content: '';
+  position: absolute;
+  top: 12px;
+  left: 0;
+  width: 30px;
+  height: 2px;
+  background-color: var(--main);
+}
+
+/* Таблицы */
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: var(--white);
+}
+
+/* Расписание тренировок */
+
+.schedule__head {
+  background-color: var(--main);
+  height: 48px;
+}
+
+.schedule__head .schedule__cell {
+  font-size: 12px;
+  font-weight: 400;
+  color: var(--white);
+  text-transform: uppercase;
+  padding: 0 25px;
+  text-align: left;
+  width: calc(100%/8);
+}
+
+.schedule__content {
+  padding: 38px 0;
+  border-bottom: 1px solid rgba(var(--main-opacity), 0.45);
+}
+
+.schedule__content__list {
+  border-top: 1px solid rgba(var(--main-opacity), 0.45);
+  border-bottom: 1px solid rgba(var(--main-opacity), 0.45);
+}
+
+.schedule__row {
+  height: 90px;
+  border-bottom: 1px solid rgba(var(--main-opacity), 0.45);
+}
+
+.schedule__row .schedule__cell {
+  padding: 5px 25px;
+  width: calc(100%/8);
+}
+
+.schedule__row .schedule__cell:not(:last-child) {
+  border-right: 1px solid rgba(var(--black-opacity), 0.1);
+}
+
+.schedule__first {
+  font-size: 16px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.schedule__title {
+  font-weight: 700;
+  margin: 0 0 12px 0;
+}
+
+
+
 
 
 

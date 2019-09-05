@@ -30,18 +30,20 @@ tinySlider = new function() {
             nav       : data['nav']        ? data['nav']        : false, //точки [dots]
 
             //Основные параметры
-            items     : data['items']      ? data['items']      : 1,            //количество видимых элементов слайдов
-            slideBy   : data['slideBy']    ? data['slideBy']    : 1,            //на сколько слайдов сдвигать
-            startIndex: data['startIndex'] ? data['startIndex'] : false,        //начальный слайд
-            autoWidth : data['autoWidth']  ? data['autoWidth']  : false,        //автоматическое определение ширины слайда
-            autoHeight: data['autoHeight'] ? data['autoHeight'] : false,        //автоматическое определение высоты слайда,
-            fixedWidth: data['fixedWidth'] ? data['fixedWidth'] : false,        //фиксированная ширина слайда
-            loop      : data['loop']       ? data['loop']       : false,        //бесконечность прокрутки
-            speed     : data['speed']      ? data['speed']      : 300,          //скорость прокрутки
-            lazyload  : data['lazyload']   ? data['lazyload']   : false,        //ленивая загрузка
-            axis      : data['axis']       ? data['axis']       : 'horizontal', //['horizontal', 'vertical'] горизонтальная/вериткальная прокрутка
-            mouseDrag : data['mouseDrag']  ? data['mouseDrag']  : false,        // Прокрутка слайдов путем их перемещения
-            touch     : data['touch']      ? data['touch']      : false,        // Ручная прокрутка на телефонах
+            items      : data['items']      ? data['items']      : 1,            //количество видимых элементов слайдов
+            slideBy    : data['slideBy']    ? data['slideBy']    : 1,            //на сколько слайдов сдвигать
+            startIndex : data['startIndex'] ? data['startIndex'] : false,        //начальный слайд
+            autoWidth  : data['autoWidth']  ? data['autoWidth']  : false,        //автоматическое определение ширины слайда
+            autoHeight : data['autoHeight'] ? data['autoHeight'] : false,        //автоматическое определение высоты слайда,
+            fixedWidth : data['fixedWidth'] ? data['fixedWidth'] : false,        //фиксированная ширина слайда
+            loop       : data['loop']       ? data['loop']       : false,        //бесконечность прокрутки
+            speed      : data['speed']      ? data['speed']      : 300,          //скорость прокрутки
+            lazyload   : data['lazyload']   ? data['lazyload']   : false,        //ленивая загрузка
+            axis       : data['axis']       ? data['axis']       : 'horizontal', //['horizontal', 'vertical'] горизонтальная/вериткальная прокрутка
+            mouseDrag  : data['mouseDrag']  ? data['mouseDrag']  : false,        // Прокрутка слайдов путем их перемещения
+            touch      : data['touch']      ? data['touch']      : false,        // Ручная прокрутка на телефонах
+            gutter     : data['gutter'] ? data['gutter'] : 0,                   // Растояние между слайдерами в px
+            edgePadding: data['edgePadding'] ? data['edgePadding'] : 0,         // Пространство снаружи слайдера  в px
 
             //Автопрокрутка
             autoplay            : data['autoplay']             ? data['autoplay']             : false,     //автопрокрутка
