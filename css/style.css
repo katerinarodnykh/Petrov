@@ -397,25 +397,136 @@ img {
   height: 100%;
   background-color: var(--white);
   border-bottom: 8px solid var(--red);
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.promo-calendar__icon {
+  position: absolute;
+  top: 0;
 }
 
 .promo-calendar__title {
-  display: block;
-  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   background-color: var(--red);
   color: var(--white);
   text-transform: uppercase;
   font-size: 20px;
+  line-height: 24px;
+  position: relative;
+  z-index: 2;
+  height: 110px;
+  padding: 10px 50px;
+  text-align: center;
 }
 
 .promo-calendar__subtitle {
   font-size: 13px;
   color: var(--white);
+  position: relative;
+  z-index: 2;
+  text-transform: uppercase;
+  height: 68px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.promo-calendar__subtitle:after {
+  content: '';
+  position: absolute;
+  width: 80px;
+  height: 3px;
+  background-color: var(--main);
+  top: 0;
+  left: 50%;
+  margin-left: -40px;
 }
 
 .promo-calendar__main {
   display: flex;
+  margin: 60px auto 20px auto;
+  position: relative;
+}
+
+.promo-calendar__main:after {
+  content: '';
+  position: absolute;
+  width: 1px;
+  height: 190px;
+  transform: skewX(-20deg);
+  background-color: rgba(var(--black-opacity), 0.1);
+  top: 50%;
+  margin-top: -105px;
+  left: 50%;
+}
+
+.promo-calendar__date {
+  font-size: 12px;
+  margin: 0 0 10px 0;
+}
+
+.promo-calendar__middle {
+  color: var(--main);
+  background-color: var(--white);
+  height: 90px;
+  width: 140px;
+  flex-shrink: 0;
+  display: flex;
+  flex-direction: column;
   align-items: center;
+  justify-content: center;
+  z-index: 2;
+  margin: 30px 0 0 0;
+}
+
+.promo-calendar__middle-main {
+  font-size: 36px;
+  line-height: 40px;
+}
+
+.promo-calendar__team {
+  width: 165px;
+  flex-shrink: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.promo-calendar__team-name {
+  font-size: 15px;
+  line-height: 20px;
+  text-transform: uppercase;
+  text-align: center;
+  padding: 20px 0 0 0;
+}
+
+.promo-calendar__place {
+  margin: auto 0 0 0;
+  font-size: 13px;
+  position: relative;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-transform: uppercase;
+  color: var(--main);
+}
+
+.promo-calendar__place:after {
+  content: '';
+  position: absolute;
+  width: 80px;
+  height: 3px;
+  background-color: var(--main);
+  top: 0;
+  left: 50%;
+  margin-left: -40px;
 }
 
 .news-slider {
@@ -532,11 +643,8 @@ img {
 /* Социальные сети */
 
 .socials {
-  background:  var(--main) url("../img/backgrounds/back-1.png");
+  background:  url("../img/backgrounds/back-2.jpg");
   background-size: cover;
-  background-position: -437px 100px;
-  background-attachment: fixed;
-  background-blend-mode: overlay;
 }
 
 .socials__list {
@@ -982,6 +1090,13 @@ img {
 
 .stats-slider__arrow--right .stats-slider__icon {
   transform: scale(-1, 1);
+}
+
+/* Медиа на главной */
+
+.index-media {
+  background:  url("../img/backgrounds/back-1.jpg");
+  background-size: cover;
 }
 
 
