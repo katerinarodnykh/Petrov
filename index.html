@@ -22,7 +22,10 @@
                 <defs><clipPath id="clip-path"><circle cx="14" cy="14.04" r="14" fill="none"/></clipPath></defs><circle cx="14" cy="14.04" r="14" fill="#c24244"/><g clip-path="url(#clip-path)"><rect fill="none" stroke="#1d2a3c" stroke-miterlimit="10" stroke-width="2px" x="10" y="7.04" width="8" height="9" rx="4" ry="4"/><circle fill="none" stroke="#1d2a3c" stroke-miterlimit="10" stroke-width="2px" cx="14" cy="33.04" r="13.17"/></g>
             </symbol>
             <symbol id="arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 21.64 11.02">
-                <polygon fill="#c24244" points="20.17 11 10.82 2.83 1.48 11 0.17 9.49 10.82 0.17 21.48 9.49 20.17 11"/>
+                <polygon points="20.17 11 10.82 2.83 1.48 11 0.17 9.49 10.82 0.17 21.48 9.49 20.17 11"/>
+            </symbol>
+            <symbol id="arrow-big" xmlns="http://www.w3.org/2000/svg">
+                <path fill="#1d2a3c" d="M24.99 47.485L3.76 24.877 24.978 2.261 23.552 0 .009 24.877 22.84 49z"/>
             </symbol>
         </svg>
         <header class="header">
@@ -324,7 +327,7 @@
                                         </table>
                                     </div>
                                     <div class="schedule__content">
-                                        <div class="schedule__navigation js-main-calendar-controls">
+                                        <div class="schedule__navigation js-schedule-controls">
                                             <a class="schedule__arrow schedule__arrow--up">
                                                 <svg class="schedule__icon" width="22" height="11"><use xlink:href="img/sprite.svg#arrow"></use></svg>
                                             </a>
@@ -333,7 +336,7 @@
                                             </a>
                                         </div>
                                         <div class="schedule__content__list js-tiny-slider"
-                                             data-controls-container=".js-main-calendar-controls"
+                                             data-controls-container=".js-schedule-controls"
                                              data-controls="true"
                                              data-items="5"
                                              data-slide-by="5"
@@ -577,135 +580,185 @@
                     </div>
                 </section>
                 <section class="stats-block">
-                    <div class="container container--padding">
+                    <div class="container">
                         <h2 class="subtitle">Статистика турниров</h2>
-                        <form class="stats-form" action="" method="">
-                            <div class="stats-form__group stats-form__group-radio">
-                                <input id="1" class="stats-form__radio" type="radio" name="stats" value="1" checked>
-                                <label for="1" class="stats-form__label">Бомбардиры</label>
-                                <input id="2" class="stats-form__radio" type="radio" name="stats" value="2">
-                                <label for="2" class="stats-form__label">Ассистенты</label>
-                                <input id="3" class="stats-form__radio" type="radio" name="stats" value="3">
-                                <label for="3" class="stats-form__label">Вратари</label>
-                            </div>
-                            <div class="stats-form__group">
-                                <ul class="filters">
-                                    <li class="filters__item filters__item--short">
-                                        <div class="dropdown">
-                                            <select style="display: none;">
-                                                <option>1</option>
-                                                <option>2</option>
-                                            </select>
-                                            <a class="dropdown__title">Сезон</a>
-                                            <ul class="dropdown__options visually-hidden">
-                                                <li class="dropdown__option">
-                                                    <a class="dropdown__link">1</a>
-                                                </li>
-                                                <li class="dropdown__option">
-                                                    <a class="dropdown__link">2</a>
-                                                </li>
-                                            </ul>
-                                        </div>
-                                    </li>
-                                    <li class="filters__item filters__item--medium">
-                                        <div class="dropdown">
-                                            <select style="display: none;">
-                                                <option>1</option>
-                                                <option>2</option>
-                                            </select>
-                                            <a class="dropdown__title">Турнир</a>
-                                            <ul class="dropdown__options visually-hidden">
-                                                <li class="dropdown__option">
-                                                    <a class="dropdown__link">1</a>
-                                                </li>
-                                                <li class="dropdown__option">
-                                                    <a class="dropdown__link">2</a>
-                                                </li>
-                                            </ul>
-                                        </div>
-                                    </li>
-                                    <li class="filters__item filters__item--short">
-                                        <div class="dropdown">
-                                            <select style="display: none;">
-                                                <option>1</option>
-                                                <option>2</option>
-                                            </select>
-                                            <a class="dropdown__title">Этап</a>
-                                            <ul class="dropdown__options visually-hidden">
-                                                <li class="dropdown__option">
-                                                    <a class="dropdown__link">1</a>
-                                                </li>
-                                                <li class="dropdown__option">
-                                                    <a class="dropdown__link">2</a>
-                                                </li>
-                                            </ul>
-                                        </div>
-                                    </li>
-                                </ul>
-                            </div>
-                        </form>
-                        <div class="stats-slider">
-                            <div class="stats-slider__navigation">
-                                <a class="stats-slider__arrow"></a>
-                                <a class="stats-slider__arrow"></a>
-                            </div>
-                            <ul class="stats-slider__list">
-                                <li class="stats-slider__item">
-                                    <a class="stats-slider__link" href="#">
-                                        <img class="stats-slider__img" src="img/dev-player.png" width="" height="">
-                                        <div class="stats-slider__content">
-                                            <p class="stats-slider__title">Константин Константиновский</p>
-                                            <div class="stats-slider__bottom">
-                                                <div class="stats-slider__block">
-                                                    <span class="stats-slider__unit">Игр</span>
-                                                    <span class="stats-slider__value">155</span>
-                                                </div>
-                                                <div class="stats-slider__block">
-                                                    <span class="stats-slider__unit">Пропущено</span>
-                                                    <span class="stats-slider__value">155</span>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </a>
+                    </div>
+                    <form class="stats-form container" action="" method="">
+                        <div class="stats-form__group stats-form__group-radio">
+                            <input id="1" class="stats-form__radio" type="radio" name="stats" value="1" checked>
+                            <label for="1" class="stats-form__label">Бомбардиры</label>
+                            <input id="2" class="stats-form__radio" type="radio" name="stats" value="2">
+                            <label for="2" class="stats-form__label">Ассистенты</label>
+                            <input id="3" class="stats-form__radio" type="radio" name="stats" value="3">
+                            <label for="3" class="stats-form__label">Вратари</label>
+                        </div>
+                        <div class="stats-form__group">
+                            <ul class="filters">
+                                <li class="filters__item filters__item--short">
+                                    <div class="dropdown">
+                                        <select style="display: none;">
+                                            <option>1</option>
+                                            <option>2</option>
+                                        </select>
+                                        <a class="dropdown__title">Сезон</a>
+                                        <ul class="dropdown__options visually-hidden">
+                                            <li class="dropdown__option">
+                                                <a class="dropdown__link">1</a>
+                                            </li>
+                                            <li class="dropdown__option">
+                                                <a class="dropdown__link">2</a>
+                                            </li>
+                                        </ul>
+                                    </div>
                                 </li>
-                                <li class="stats-slider__item">
-                                    <a class="stats-slider__link" href="#">
-                                        <img src="" width="" height="">
-                                        <div class="stats-slider__content">
-                                            <p class="stats-slider__title">Константин Константиновский</p>
-                                            <div class="stats-slider__bottom">
-                                                <div class="stats-slider__block">
-                                                    <span class="stats-slider__unit">Игр</span>
-                                                    <span class="stats-slider__value">155</span>
-                                                </div>
-                                                <div class="stats-slider__block">
-                                                    <span class="stats-slider__unit">Пропущено</span>
-                                                    <span class="stats-slider__value">155</span>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </a>
+                                <li class="filters__item filters__item--medium">
+                                    <div class="dropdown">
+                                        <select style="display: none;">
+                                            <option>1</option>
+                                            <option>2</option>
+                                        </select>
+                                        <a class="dropdown__title">Турнир</a>
+                                        <ul class="dropdown__options visually-hidden">
+                                            <li class="dropdown__option">
+                                                <a class="dropdown__link">1</a>
+                                            </li>
+                                            <li class="dropdown__option">
+                                                <a class="dropdown__link">2</a>
+                                            </li>
+                                        </ul>
+                                    </div>
                                 </li>
-                                <li class="stats-slider__item">
-                                    <a class="stats-slider__link" href="#">
-                                        <img src="" width="" height="">
-                                        <div class="stats-slider__content">
-                                            <p class="stats-slider__title">Константин Константиновский</p>
-                                            <div class="stats-slider__bottom">
-                                                <div class="stats-slider__block">
-                                                    <span class="stats-slider__unit">Игр</span>
-                                                    <span class="stats-slider__value">155</span>
-                                                </div>
-                                                <div class="stats-slider__block">
-                                                    <span class="stats-slider__unit">Пропущено</span>
-                                                    <span class="stats-slider__value">155</span>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </a>
+                                <li class="filters__item filters__item--short">
+                                    <div class="dropdown">
+                                        <select style="display: none;">
+                                            <option>1</option>
+                                            <option>2</option>
+                                        </select>
+                                        <a class="dropdown__title">Этап</a>
+                                        <ul class="dropdown__options visually-hidden">
+                                            <li class="dropdown__option">
+                                                <a class="dropdown__link">1</a>
+                                            </li>
+                                            <li class="dropdown__option">
+                                                <a class="dropdown__link">2</a>
+                                            </li>
+                                        </ul>
+                                    </div>
                                 </li>
                             </ul>
                         </div>
+                    </form>
+                    <div class="stats-slider">
+                        <div class="stats-slider__navigation js-stats-slider-controls">
+                            <a class="stats-slider__arrow stats-slider__arrow--left">
+                                <svg class="stats-slider__icon" width="25" height="49"><use xlink:href="img/sprite.svg#arrow-big"></use></svg>
+                            </a>
+                            <a class="stats-slider__arrow stats-slider__arrow--right">
+                                <svg class="stats-slider__icon" width="25" height="49"><use xlink:href="img/sprite.svg#arrow-big"></use></svg>
+                            </a>
+                        </div>
+                        <ul class="stats-slider__list js-tiny-slider"
+                            data-controls-container=".js-stats-slider-controls"
+                            data-controls="true"
+                            data-items="4"
+                            data-start-index="0"
+                            data-loop = "true"
+                            data-autoplay = "true"
+                            data-autoplay-timeout = "4000"
+                            data-speed = "500"
+                            data-mouse-drag = "true"
+                        >
+                            <li class="stats-slider__item">
+                                <a class="stats-slider__link" href="#">
+                                    <img class="stats-slider__img" src="img/dev-player.png" width="295" height="295">
+                                    <div class="stats-slider__content">
+                                        <p class="stats-slider__title">Константин Константиновский</p>
+                                        <div class="stats-slider__bottom">
+                                            <div class="stats-slider__block">
+                                                <span class="stats-slider__unit">Игр</span>
+                                                <span class="stats-slider__value">155</span>
+                                            </div>
+                                            <div class="stats-slider__block">
+                                                <span class="stats-slider__unit">Пропущено</span>
+                                                <span class="stats-slider__value">155</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="stats-slider__item">
+                                <a class="stats-slider__link" href="#">
+                                    <img class="stats-slider__img" src="img/dev-player.png" width="295" height="295">
+                                    <div class="stats-slider__content">
+                                        <p class="stats-slider__title">Константин Константиновский</p>
+                                        <div class="stats-slider__bottom">
+                                            <div class="stats-slider__block">
+                                                <span class="stats-slider__unit">Игр</span>
+                                                <span class="stats-slider__value">155</span>
+                                            </div>
+                                            <div class="stats-slider__block">
+                                                <span class="stats-slider__unit">Пропущено</span>
+                                                <span class="stats-slider__value">155</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="stats-slider__item">
+                                <a class="stats-slider__link" href="#">
+                                    <img class="stats-slider__img" src="img/dev-player.png" width="295" height="295">
+                                    <div class="stats-slider__content">
+                                        <p class="stats-slider__title">Константин Константиновский</p>
+                                        <div class="stats-slider__bottom">
+                                            <div class="stats-slider__block">
+                                                <span class="stats-slider__unit">Игр</span>
+                                                <span class="stats-slider__value">155</span>
+                                            </div>
+                                            <div class="stats-slider__block">
+                                                <span class="stats-slider__unit">Пропущено</span>
+                                                <span class="stats-slider__value">155</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="stats-slider__item">
+                                <a class="stats-slider__link" href="#">
+                                    <img class="stats-slider__img" src="img/dev-player.png" width="295" height="295">
+                                    <div class="stats-slider__content">
+                                        <p class="stats-slider__title">Константин Константиновский</p>
+                                        <div class="stats-slider__bottom">
+                                            <div class="stats-slider__block">
+                                                <span class="stats-slider__unit">Игр</span>
+                                                <span class="stats-slider__value">155</span>
+                                            </div>
+                                            <div class="stats-slider__block">
+                                                <span class="stats-slider__unit">Пропущено</span>
+                                                <span class="stats-slider__value">155</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="stats-slider__item">
+                                <a class="stats-slider__link" href="#">
+                                    <img class="stats-slider__img" src="img/dev-player.png" width="295" height="295">
+                                    <div class="stats-slider__content">
+                                        <p class="stats-slider__title">Константин Константиновский</p>
+                                        <div class="stats-slider__bottom">
+                                            <div class="stats-slider__block">
+                                                <span class="stats-slider__unit">Игр</span>
+                                                <span class="stats-slider__value">155</span>
+                                            </div>
+                                            <div class="stats-slider__block">
+                                                <span class="stats-slider__unit">Пропущено</span>
+                                                <span class="stats-slider__value">155</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                        </ul>
                     </div>
                 </section>
                 <section class="socials">
