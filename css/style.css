@@ -92,11 +92,12 @@ html {
   color: var(--black);
   font-style: normal;
   font-weight: 400;
-  background-color: var(--white);
+  background-color: var(--gray);
   min-width: 1270px;
   display: flex;
   flex-direction: column;
-  height: 100vh;
+  height: 100%;
+  min-height: 100vh;
 }
 
 a {
@@ -133,6 +134,7 @@ img {
   align-items: center;
   justify-content: center;
   margin: 60px auto 0 auto;
+  border: none;
 }
 
 .subtitle {
@@ -144,6 +146,10 @@ img {
   color: var(--red);
   margin: 0 0 60px 0;
   text-transform: uppercase;
+}
+
+.white-background {
+  background-color: var(--white);
 }
 
 .tabs__top .subtitle {
@@ -178,10 +184,34 @@ img {
   font-family: "Geometria", "Arial", sans-serif;
   font-weight: 500;
   font-size: 12px;
-  color: var(--red);
   letter-spacing: 1.7px;
-  border: 2px solid var(--red);
   text-transform: uppercase;
+}
+
+.tabs__item--active .tabs__link {
+  color: var(--red);
+  border: 2px solid var(--red);
+}
+
+.tabs--gray .tabs__item {
+  flex-grow: 1;
+}
+
+.tabs--gray .tabs__link {
+  height: 60px;
+  text-align: center;
+  justify-content: center;
+  color: var(--white);
+}
+
+.tabs--gray .tabs__item:not(:last-child) {
+  margin: 0;
+}
+
+.tabs--gray .tabs__item--active .tabs__link {
+  border: none;
+  background-color: var(--gray);
+  color: var(--red);
 }
 
 .header {
@@ -277,6 +307,10 @@ img {
   padding: 5px 45px;
 }
 
+.navigation__item--active .navigation__link {
+  color: var(--red);
+}
+
 .navigation__item:first-child .navigation__link {
   padding: 5px 45px 5px 0;
 }
@@ -362,15 +396,19 @@ img {
   margin: 0 0 24px 0;
 }
 
-.promo {
+.main-background {
   margin-top: -180px;
   position: relative;
-  padding: 240px 0 110px;
-  background:  rgba(var(--main-opacity), 0.7) url("../img/promo-background.png");
+  padding: 180px 0 0 0;
+  background:  rgba(var(--main-opacity), 0.7) url("../img/main-background.png");
   background-size: cover;
   background-position: center -160px;
   background-attachment: fixed;
   background-blend-mode: overlay;
+}
+
+.promo {
+  padding: 240px 0 110px;
 }
 
 .promo__title {
@@ -1005,7 +1043,6 @@ img {
 
 .stats-block {
   padding: 90px 0 80px 0;
-  background-color: var(--gray);
 }
 
 .stats-form {
@@ -1146,6 +1183,146 @@ img {
   background:  url("../img/backgrounds/back-1.jpg");
   background-size: cover;
 }
+
+/* Анкета для поступления */
+
+.start-form__tabs {
+  padding: 210px 0 0 0;
+}
+
+.start-form__wrapper {
+  padding: 70px 0 140px 0;
+  background-color: var(--gray);
+}
+
+.start-form__block {
+  padding: 70px 80px 1px 80px;
+  font-family: "Geometria", "Arial", sans-serif;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 23px;
+}
+
+.start-form__block .subtitle {
+  margin: 0 0 40px 0;
+}
+
+.start-form__section {
+  margin: 0 0 70px 0;
+}
+
+.start-form__heading {
+  font-size: 28px;
+  line-height: 35px;
+  color: var(--red);
+  margin: 0 0 54px 0;
+  font-weight: 500;
+}
+
+.start-form__docs {
+  display: flex;
+  justify-content: space-between;
+}
+
+.start-form__docs-wrapper {
+  max-width: 490px;
+  min-height: 85px;
+}
+
+.start-form__docs-wrapper:first-child {
+  max-width: 440px;
+}
+
+.start-form__docs-unit {
+  display: flex;
+}
+
+.start-form__docs-text {
+  margin: 0 30px 0 0;
+}
+
+.start-form__upload-input {
+  display: none;
+}
+
+.start-form__upload-text {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 210px;
+  height: 52px;
+  background-color: var(--main);
+  font-size: 12px;
+  letter-spacing: 1.7px;
+  color: var(--white);
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+.start-form__help {
+  font-size: 12px;
+  padding: 5px 0;
+  color: var(--red);
+}
+
+.start-form__container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.start-form__label {
+  display: flex;
+  flex-direction: column;
+}
+
+.start-form__group {
+  min-width: 335px;
+  margin: 0 35px 5px 0;
+  min-height: 122px;
+}
+
+.start-form__group:nth-child(3n) {
+  margin: 0 0 5px 0;
+}
+
+.start-form__group--full {
+  width: 100%;
+  margin: 0 0 5px 0;
+}
+
+.start-form__text {
+  display: block;
+  margin: 0 0 14px 0;
+}
+
+.start-form__input {
+  width: 100%;
+  height: 50px;
+  border: 1px solid rgba(var(--black-opacity), 0.2);
+  outline: none;
+  padding: 0 20px;
+}
+
+.start-form__doc-wrapper {
+  width: 100%;
+}
+
+.start-form__doc {
+  display: flex;
+  justify-content: space-between;
+}
+
+.start-form__doc-text {
+  width: 565px;
+}
+
+.start-form__doc .start-form__upload-text {
+  width: 340px;
+}
+
+
+
+
 
 
 

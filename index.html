@@ -2,7 +2,7 @@
 <html lang="ru">
 <head>
     <meta charset="utf-8">
-    <title>Название проекта</title>
+    <title>Хоккейная академия им. Владимира Петрова</title>
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <link href="css/normalize.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
@@ -83,7 +83,7 @@
         </header>
         <div class="main-container">
             <div class="main-content">
-                <section class="promo">
+                <section class="promo main-background">
                     <h1 class="promo__title">Хоккейная академия им. Владимира Петрова</h1>
                     <div class="promo__wrapper container">
                         <div class="promo-calendar">
@@ -238,78 +238,82 @@
                         </div>
                     </div>
                 </section>
-                <section class="banner container">
-                    <a class="banner__link" href="#">
-                        <img class="banner__img" src="img/dev-img.png" width="1240" height="300">
-                    </a>
+                <section class="banner white-background">
+                    <div class="container">
+                        <a class="banner__link" href="#">
+                            <img class="banner__img" src="img/dev-img.png" width="1240" height="300">
+                        </a>
+                    </div>
                 </section>
-                <section class="calendar-block container container--padding">
-                    <div class="tabs">
-                        <div class="tabs__top">
-                            <h2 class="subtitle tabs__title">Календарь игр</h2>
-                            <ul class="tabs__navigation">
-                                <li class="tabs__item tabs__item--active">
-                                    <a class="tabs__link" href="#">Будущие матчи</a>
-                                </li>
-                                <li class="tabs__item">
-                                    <a class="tabs__link" href="#">Прошедшие матчи</a>
-                                </li>
-                            </ul>
-                        </div>
-                        <div class="tabs__content">
-                            <div class="tabs__pane">
-                                <ul class="calendar">
-                                    <li class="calendar__item">
-                                        <div class="calendar__main">
-                                            <a class="calendar__team calendar__team--left" href="#">
-                                                <img class="calendar__img" src="img/logo.png" width="80" height="80">
-                                                <p class="calendar__team-name">Академия Петрова</p>
-                                            </a>
-                                            <a class="calendar__score" href="#">
-                                                <div class="calendar__date">07.09.2019</div>
-                                                <div class="calendar__score-main">12:00</div>
-                                                <!--Вид со счётом-->
-                                                <!--<div class="calendar__score-main">8 - 3</div>-->
-                                            </a>
-                                            <a class="calendar__team" href="#">
-                                                <img class="calendar__img" src="img/logo.png" width="80" height="80">
-                                                <p class="calendar__team-name">Академия Петрова</p>
-                                            </a>
-                                        </div>
-                                        <div class="calendar__sidebar">
-                                            <a class="calendar__tournament" href="#">Первенство московской области среди юниоров 2002 г.р.</a>
-                                            <a class="calendar__group" href="#">Группа А</a>
-                                            <a class="calendar__place" href="#">Ледовый дворец «Сокольники»</a>
-                                        </div>
+                <section class="calendar-block white-background">
+                    <div class="container container--padding">
+                        <div class="tabs">
+                            <div class="tabs__top">
+                                <h2 class="subtitle tabs__title">Календарь игр</h2>
+                                <ul class="tabs__navigation">
+                                    <li class="tabs__item tabs__item--active">
+                                        <a class="tabs__link" href="#">Будущие матчи</a>
                                     </li>
-                                    <li class="calendar__item">
-                                        <div class="calendar__main">
-                                            <a class="calendar__team calendar__team--left" href="#">
-                                                <img class="calendar__img" src="img/logo.png" width="80" height="80">
-                                                <p class="calendar__team-name">Академия Петрова</p>
-                                            </a>
-                                            <a class="calendar__score" href="#">
-                                                <div class="calendar__date">07.09.2019</div>
-                                                <div class="calendar__score-main">12:00</div>
-                                                <!--<div class="calendar__score-main">8 - 3</div>-->
-                                            </a>
-                                            <a class="calendar__team" href="#">
-                                                <img class="calendar__img" src="img/logo.png" width="80" height="80">
-                                                <p class="calendar__team-name">Академия Петрова</p>
-                                            </a>
-                                        </div>
-                                        <div class="calendar__sidebar">
-                                            <a class="calendar__tournament" href="#">Первенство московской области среди юниоров 2002 г.р.</a>
-                                            <a class="calendar__group" href="#">Группа А</a>
-                                            <a class="calendar__place" href="#">Ледовый дворец «Сокольники»</a>
-                                        </div>
+                                    <li class="tabs__item">
+                                        <a class="tabs__link" href="#">Прошедшие матчи</a>
                                     </li>
                                 </ul>
                             </div>
-                            <div class="tabs__pane"></div>
+                            <div class="tabs__content">
+                                <div class="tabs__pane">
+                                    <ul class="calendar">
+                                        <li class="calendar__item">
+                                            <div class="calendar__main">
+                                                <a class="calendar__team calendar__team--left" href="#">
+                                                    <img class="calendar__img" src="img/logo.png" width="80" height="80">
+                                                    <p class="calendar__team-name">Академия Петрова</p>
+                                                </a>
+                                                <a class="calendar__score" href="#">
+                                                    <div class="calendar__date">07.09.2019</div>
+                                                    <div class="calendar__score-main">12:00</div>
+                                                    <!--Вид со счётом-->
+                                                    <!--<div class="calendar__score-main">8 - 3</div>-->
+                                                </a>
+                                                <a class="calendar__team" href="#">
+                                                    <img class="calendar__img" src="img/logo.png" width="80" height="80">
+                                                    <p class="calendar__team-name">Академия Петрова</p>
+                                                </a>
+                                            </div>
+                                            <div class="calendar__sidebar">
+                                                <a class="calendar__tournament" href="#">Первенство московской области среди юниоров 2002 г.р.</a>
+                                                <a class="calendar__group" href="#">Группа А</a>
+                                                <a class="calendar__place" href="#">Ледовый дворец «Сокольники»</a>
+                                            </div>
+                                        </li>
+                                        <li class="calendar__item">
+                                            <div class="calendar__main">
+                                                <a class="calendar__team calendar__team--left" href="#">
+                                                    <img class="calendar__img" src="img/logo.png" width="80" height="80">
+                                                    <p class="calendar__team-name">Академия Петрова</p>
+                                                </a>
+                                                <a class="calendar__score" href="#">
+                                                    <div class="calendar__date">07.09.2019</div>
+                                                    <div class="calendar__score-main">12:00</div>
+                                                    <!--<div class="calendar__score-main">8 - 3</div>-->
+                                                </a>
+                                                <a class="calendar__team" href="#">
+                                                    <img class="calendar__img" src="img/logo.png" width="80" height="80">
+                                                    <p class="calendar__team-name">Академия Петрова</p>
+                                                </a>
+                                            </div>
+                                            <div class="calendar__sidebar">
+                                                <a class="calendar__tournament" href="#">Первенство московской области среди юниоров 2002 г.р.</a>
+                                                <a class="calendar__group" href="#">Группа А</a>
+                                                <a class="calendar__place" href="#">Ледовый дворец «Сокольники»</a>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="tabs__pane"></div>
+                            </div>
                         </div>
+                        <a class="button" href="#">Смотреть весь календарь</a>
                     </div>
-                    <a class="button" href="#">Смотреть весь календарь</a>
                 </section>
                 <section class="index-media">
                     <div class="container container--padding">
@@ -338,25 +342,26 @@
                         </div>
                     </div>
                 </section>
-                <section class="schedule-block container container--padding">
-                    <div class="tabs">
-                        <div class="tabs__top">
-                            <h2 class="subtitle tabs__title">Расписание тренировок</h2>
-                            <ul class="tabs__navigation">
-                                <li class="tabs__item tabs__item--active">
-                                    <a class="tabs__link" href="#">Платные секции</a>
-                                </li>
-                                <li class="tabs__item">
-                                    <a class="tabs__link" href="#">Бесплатные секции</a>
-                                </li>
-                            </ul>
-                        </div>
-                        <div class="tabs__content">
-                            <div class="tabs__pane">
-                                <div class="schedule">
-                                    <div class="schedule__top">
-                                        <table class="table table--schedule">
-                                            <thead>
+                <section class="schedule-block white-background">
+                    <div class="container container--padding">
+                        <div class="tabs">
+                            <div class="tabs__top">
+                                <h2 class="subtitle tabs__title">Расписание тренировок</h2>
+                                <ul class="tabs__navigation">
+                                    <li class="tabs__item tabs__item--active">
+                                        <a class="tabs__link" href="#">Платные секции</a>
+                                    </li>
+                                    <li class="tabs__item">
+                                        <a class="tabs__link" href="#">Бесплатные секции</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="tabs__content">
+                                <div class="tabs__pane">
+                                    <div class="schedule">
+                                        <div class="schedule__top">
+                                            <table class="table table--schedule">
+                                                <thead>
                                                 <tr class="schedule__head">
                                                     <th class="schedule__cell">Год</th>
                                                     <th class="schedule__cell">Пн 29.07</th>
@@ -367,259 +372,260 @@
                                                     <th class="schedule__cell">Сб 03.08</th>
                                                     <th class="schedule__cell">Вс 04.08</th>
                                                 </tr>
-                                            </thead>
-                                        </table>
-                                    </div>
-                                    <div class="schedule__content">
-                                        <div class="schedule__navigation js-schedule-controls">
-                                            <a class="schedule__arrow schedule__arrow--up">
-                                                <svg class="schedule__icon" width="22" height="11"><use xlink:href="img/sprite.svg#arrow-horizontal"></use></svg>
-                                            </a>
-                                            <a class="schedule__arrow schedule__arrow--down">
-                                                <svg class="schedule__icon" width="22" height="11"><use xlink:href="img/sprite.svg#arrow-horizontal"></use></svg>
-                                            </a>
+                                                </thead>
+                                            </table>
                                         </div>
-                                        <div class="schedule__content__list js-tiny-slider"
-                                             data-controls-container=".js-schedule-controls"
-                                             data-controls="true"
-                                             data-items="5"
-                                             data-slide-by="5"
-                                             data-axis="vertical"
-                                             data-loop="true"
-                                             data-autoplay="true"
-                                             data-autoplay-timeout="5000"
-                                             data-autoplay-over-pause="true"
-                                             data-speed="750"
-                                             data-mouse-drag="true"
-                                        >
-                                            <div class="schedule__content-row">
-                                                <table class="table table--schedule">
-                                                    <tbody>
-                                                    <tr class="schedule__row">
-                                                        <td class="schedule__cell schedule__first">Юниоры</td>
-                                                        <td class="schedule__cell">
-                                                            <div class="schedule__title">13:30-15:00</div>
-                                                            <div class="schedule__text">Лед Б</div>
-                                                        </td>
-                                                        <td class="schedule__cell">
-                                                            <div class="schedule__title">13:30-15:00</div>
-                                                            <div class="schedule__text">Лед Б</div>
-                                                        </td>
-                                                        <td class="schedule__cell">
-                                                            <div class="schedule__title">13:30-15:00</div>
-                                                            <div class="schedule__text">Лед Б</div>
-                                                        </td>
-                                                        <td class="schedule__cell">
-                                                            <div class="schedule__title">13:30-15:00</div>
-                                                            <div class="schedule__text">Лед Б</div>
-                                                        </td>
-                                                        <td class="schedule__cell">
-                                                            <div class="schedule__title">13:30-15:00</div>
-                                                            <div class="schedule__text">Лед Б</div>
-                                                        </td>
-                                                        <td class="schedule__cell">
-                                                            <div class="schedule__title">13:30-15:00</div>
-                                                            <div class="schedule__text">Лед Б</div>
-                                                        </td>
-                                                        <td class="schedule__cell">
-                                                            <div class="schedule__title">13:30-15:00</div>
-                                                            <div class="schedule__text">Лед Б</div>
-                                                        </td>
-                                                    </tr>
-                                                    </tbody>
-                                                </table>
+                                        <div class="schedule__content">
+                                            <div class="schedule__navigation js-schedule-controls">
+                                                <a class="schedule__arrow schedule__arrow--up">
+                                                    <svg class="schedule__icon" width="22" height="11"><use xlink:href="img/sprite.svg#arrow-horizontal"></use></svg>
+                                                </a>
+                                                <a class="schedule__arrow schedule__arrow--down">
+                                                    <svg class="schedule__icon" width="22" height="11"><use xlink:href="img/sprite.svg#arrow-horizontal"></use></svg>
+                                                </a>
                                             </div>
-                                            <div class="schedule__content-row">
-                                                <table class="table table--schedule">
-                                                    <tbody>
-                                                    <tr class="schedule__row">
-                                                        <td class="schedule__cell schedule__first">2007</td>
-                                                        <td class="schedule__cell">
-                                                            <div class="schedule__title">13:30-15:00</div>
-                                                            <div class="schedule__text">Лед Б</div>
-                                                        </td>
-                                                        <td class="schedule__cell">
-                                                            <div class="schedule__title">13:30-15:00</div>
-                                                            <div class="schedule__text">Лед Б</div>
-                                                        </td>
-                                                        <td class="schedule__cell">
-                                                            <div class="schedule__title">13:30-15:00</div>
-                                                            <div class="schedule__text">Лед Б</div>
-                                                        </td>
-                                                        <td class="schedule__cell">
-                                                            <div class="schedule__title">13:30-15:00</div>
-                                                            <div class="schedule__text">Лед Б</div>
-                                                        </td>
-                                                        <td class="schedule__cell">
-                                                            <div class="schedule__title">13:30-15:00</div>
-                                                            <div class="schedule__text">Лед Б</div>
-                                                        </td>
-                                                        <td class="schedule__cell">
-                                                            <div class="schedule__title">13:30-15:00</div>
-                                                            <div class="schedule__text">Лед Б</div>
-                                                        </td>
-                                                        <td class="schedule__cell">
-                                                            <div class="schedule__title">13:30-15:00</div>
-                                                            <div class="schedule__text">Лед Б</div>
-                                                        </td>
-                                                    </tr>
-                                                    </tbody>
-                                                </table>
-                                            </div>
-                                            <div class="schedule__content-row">
-                                                <table class="table table--schedule">
-                                                    <tbody>
-                                                    <tr class="schedule__row">
-                                                        <td class="schedule__cell schedule__first">2006</td>
-                                                        <td class="schedule__cell">
-                                                            <div class="schedule__title">13:30-15:00</div>
-                                                            <div class="schedule__text">Лед Б</div>
-                                                        </td>
-                                                        <td class="schedule__cell">
-                                                            <div class="schedule__title">13:30-15:00</div>
-                                                            <div class="schedule__text">Лед Б</div>
-                                                        </td>
-                                                        <td class="schedule__cell">
-                                                            <div class="schedule__title">13:30-15:00</div>
-                                                            <div class="schedule__text">Лед Б</div>
-                                                        </td>
-                                                        <td class="schedule__cell">
-                                                            <div class="schedule__title">13:30-15:00</div>
-                                                            <div class="schedule__text">Лед Б</div>
-                                                        </td>
-                                                        <td class="schedule__cell">
-                                                            <div class="schedule__title">13:30-15:00</div>
-                                                            <div class="schedule__text">Лед Б</div>
-                                                        </td>
-                                                        <td class="schedule__cell">
-                                                            <div class="schedule__title">13:30-15:00</div>
-                                                            <div class="schedule__text">Лед Б</div>
-                                                        </td>
-                                                        <td class="schedule__cell">
-                                                            <div class="schedule__title">13:30-15:00</div>
-                                                            <div class="schedule__text">Лед Б</div>
-                                                        </td>
-                                                    </tr>
-                                                    </tbody>
-                                                </table>
-                                            </div>
-                                            <div class="schedule__content-row">
-                                                <table class="table table--schedule">
-                                                    <tbody>
-                                                    <tr class="schedule__row">
-                                                        <td class="schedule__cell schedule__first">2005</td>
-                                                        <td class="schedule__cell">
-                                                            <div class="schedule__title">13:30-15:00</div>
-                                                            <div class="schedule__text">Лед Б</div>
-                                                        </td>
-                                                        <td class="schedule__cell">
-                                                            <div class="schedule__title">13:30-15:00</div>
-                                                            <div class="schedule__text">Лед Б</div>
-                                                        </td>
-                                                        <td class="schedule__cell">
-                                                            <div class="schedule__title">13:30-15:00</div>
-                                                            <div class="schedule__text">Лед Б</div>
-                                                        </td>
-                                                        <td class="schedule__cell">
-                                                            <div class="schedule__title">13:30-15:00</div>
-                                                            <div class="schedule__text">Лед Б</div>
-                                                        </td>
-                                                        <td class="schedule__cell">
-                                                            <div class="schedule__title">13:30-15:00</div>
-                                                            <div class="schedule__text">Лед Б</div>
-                                                        </td>
-                                                        <td class="schedule__cell">
-                                                            <div class="schedule__title">13:30-15:00</div>
-                                                            <div class="schedule__text">Лед Б</div>
-                                                        </td>
-                                                        <td class="schedule__cell">
-                                                            <div class="schedule__title">13:30-15:00</div>
-                                                            <div class="schedule__text">Лед Б</div>
-                                                        </td>
-                                                    </tr>
-                                                    </tbody>
-                                                </table>
-                                            </div>
-                                            <div class="schedule__content-row">
-                                                <table class="table table--schedule">
-                                                    <tbody>
-                                                    <tr class="schedule__row">
-                                                        <td class="schedule__cell schedule__first">2004</td>
-                                                        <td class="schedule__cell">
-                                                            <div class="schedule__title">13:30-15:00</div>
-                                                            <div class="schedule__text">Лед Б</div>
-                                                        </td>
-                                                        <td class="schedule__cell">
-                                                            <div class="schedule__title">13:30-15:00</div>
-                                                            <div class="schedule__text">Лед Б</div>
-                                                        </td>
-                                                        <td class="schedule__cell">
-                                                            <div class="schedule__title">13:30-15:00</div>
-                                                            <div class="schedule__text">Лед Б</div>
-                                                        </td>
-                                                        <td class="schedule__cell">
-                                                            <div class="schedule__title">13:30-15:00</div>
-                                                            <div class="schedule__text">Лед Б</div>
-                                                        </td>
-                                                        <td class="schedule__cell">
-                                                            <div class="schedule__title">13:30-15:00</div>
-                                                            <div class="schedule__text">Лед Б</div>
-                                                        </td>
-                                                        <td class="schedule__cell">
-                                                            <div class="schedule__title">13:30-15:00</div>
-                                                            <div class="schedule__text">Лед Б</div>
-                                                        </td>
-                                                        <td class="schedule__cell">
-                                                            <div class="schedule__title">13:30-15:00</div>
-                                                            <div class="schedule__text">Лед Б</div>
-                                                        </td>
-                                                    </tr>
-                                                    </tbody>
-                                                </table>
-                                            </div>
-                                            <div class="schedule__content-row">
-                                                <table class="table table--schedule">
-                                                    <tbody>
-                                                    <tr class="schedule__row">
-                                                        <td class="schedule__cell schedule__first">2003</td>
-                                                        <td class="schedule__cell">
-                                                            <div class="schedule__title">13:30-15:00</div>
-                                                            <div class="schedule__text">Лед Б</div>
-                                                        </td>
-                                                        <td class="schedule__cell">
-                                                            <div class="schedule__title">13:30-15:00</div>
-                                                            <div class="schedule__text">Лед Б</div>
-                                                        </td>
-                                                        <td class="schedule__cell">
-                                                            <div class="schedule__title">13:30-15:00</div>
-                                                            <div class="schedule__text">Лед Б</div>
-                                                        </td>
-                                                        <td class="schedule__cell">
-                                                            <div class="schedule__title">13:30-15:00</div>
-                                                            <div class="schedule__text">Лед Б</div>
-                                                        </td>
-                                                        <td class="schedule__cell">
-                                                            <div class="schedule__title">13:30-15:00</div>
-                                                            <div class="schedule__text">Лед Б</div>
-                                                        </td>
-                                                        <td class="schedule__cell">
-                                                            <div class="schedule__title">13:30-15:00</div>
-                                                            <div class="schedule__text">Лед Б</div>
-                                                        </td>
-                                                        <td class="schedule__cell">
-                                                            <div class="schedule__title">13:30-15:00</div>
-                                                            <div class="schedule__text">Лед Б</div>
-                                                        </td>
-                                                    </tr>
-                                                    </tbody>
-                                                </table>
+                                            <div class="schedule__content__list js-tiny-slider"
+                                                 data-controls-container=".js-schedule-controls"
+                                                 data-controls="true"
+                                                 data-items="5"
+                                                 data-slide-by="5"
+                                                 data-axis="vertical"
+                                                 data-loop="true"
+                                                 data-autoplay="true"
+                                                 data-autoplay-timeout="5000"
+                                                 data-autoplay-over-pause="true"
+                                                 data-speed="750"
+                                                 data-mouse-drag="true"
+                                            >
+                                                <div class="schedule__content-row">
+                                                    <table class="table table--schedule">
+                                                        <tbody>
+                                                        <tr class="schedule__row">
+                                                            <td class="schedule__cell schedule__first">Юниоры</td>
+                                                            <td class="schedule__cell">
+                                                                <div class="schedule__title">13:30-15:00</div>
+                                                                <div class="schedule__text">Лед Б</div>
+                                                            </td>
+                                                            <td class="schedule__cell">
+                                                                <div class="schedule__title">13:30-15:00</div>
+                                                                <div class="schedule__text">Лед Б</div>
+                                                            </td>
+                                                            <td class="schedule__cell">
+                                                                <div class="schedule__title">13:30-15:00</div>
+                                                                <div class="schedule__text">Лед Б</div>
+                                                            </td>
+                                                            <td class="schedule__cell">
+                                                                <div class="schedule__title">13:30-15:00</div>
+                                                                <div class="schedule__text">Лед Б</div>
+                                                            </td>
+                                                            <td class="schedule__cell">
+                                                                <div class="schedule__title">13:30-15:00</div>
+                                                                <div class="schedule__text">Лед Б</div>
+                                                            </td>
+                                                            <td class="schedule__cell">
+                                                                <div class="schedule__title">13:30-15:00</div>
+                                                                <div class="schedule__text">Лед Б</div>
+                                                            </td>
+                                                            <td class="schedule__cell">
+                                                                <div class="schedule__title">13:30-15:00</div>
+                                                                <div class="schedule__text">Лед Б</div>
+                                                            </td>
+                                                        </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </div>
+                                                <div class="schedule__content-row">
+                                                    <table class="table table--schedule">
+                                                        <tbody>
+                                                        <tr class="schedule__row">
+                                                            <td class="schedule__cell schedule__first">2007</td>
+                                                            <td class="schedule__cell">
+                                                                <div class="schedule__title">13:30-15:00</div>
+                                                                <div class="schedule__text">Лед Б</div>
+                                                            </td>
+                                                            <td class="schedule__cell">
+                                                                <div class="schedule__title">13:30-15:00</div>
+                                                                <div class="schedule__text">Лед Б</div>
+                                                            </td>
+                                                            <td class="schedule__cell">
+                                                                <div class="schedule__title">13:30-15:00</div>
+                                                                <div class="schedule__text">Лед Б</div>
+                                                            </td>
+                                                            <td class="schedule__cell">
+                                                                <div class="schedule__title">13:30-15:00</div>
+                                                                <div class="schedule__text">Лед Б</div>
+                                                            </td>
+                                                            <td class="schedule__cell">
+                                                                <div class="schedule__title">13:30-15:00</div>
+                                                                <div class="schedule__text">Лед Б</div>
+                                                            </td>
+                                                            <td class="schedule__cell">
+                                                                <div class="schedule__title">13:30-15:00</div>
+                                                                <div class="schedule__text">Лед Б</div>
+                                                            </td>
+                                                            <td class="schedule__cell">
+                                                                <div class="schedule__title">13:30-15:00</div>
+                                                                <div class="schedule__text">Лед Б</div>
+                                                            </td>
+                                                        </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </div>
+                                                <div class="schedule__content-row">
+                                                    <table class="table table--schedule">
+                                                        <tbody>
+                                                        <tr class="schedule__row">
+                                                            <td class="schedule__cell schedule__first">2006</td>
+                                                            <td class="schedule__cell">
+                                                                <div class="schedule__title">13:30-15:00</div>
+                                                                <div class="schedule__text">Лед Б</div>
+                                                            </td>
+                                                            <td class="schedule__cell">
+                                                                <div class="schedule__title">13:30-15:00</div>
+                                                                <div class="schedule__text">Лед Б</div>
+                                                            </td>
+                                                            <td class="schedule__cell">
+                                                                <div class="schedule__title">13:30-15:00</div>
+                                                                <div class="schedule__text">Лед Б</div>
+                                                            </td>
+                                                            <td class="schedule__cell">
+                                                                <div class="schedule__title">13:30-15:00</div>
+                                                                <div class="schedule__text">Лед Б</div>
+                                                            </td>
+                                                            <td class="schedule__cell">
+                                                                <div class="schedule__title">13:30-15:00</div>
+                                                                <div class="schedule__text">Лед Б</div>
+                                                            </td>
+                                                            <td class="schedule__cell">
+                                                                <div class="schedule__title">13:30-15:00</div>
+                                                                <div class="schedule__text">Лед Б</div>
+                                                            </td>
+                                                            <td class="schedule__cell">
+                                                                <div class="schedule__title">13:30-15:00</div>
+                                                                <div class="schedule__text">Лед Б</div>
+                                                            </td>
+                                                        </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </div>
+                                                <div class="schedule__content-row">
+                                                    <table class="table table--schedule">
+                                                        <tbody>
+                                                        <tr class="schedule__row">
+                                                            <td class="schedule__cell schedule__first">2005</td>
+                                                            <td class="schedule__cell">
+                                                                <div class="schedule__title">13:30-15:00</div>
+                                                                <div class="schedule__text">Лед Б</div>
+                                                            </td>
+                                                            <td class="schedule__cell">
+                                                                <div class="schedule__title">13:30-15:00</div>
+                                                                <div class="schedule__text">Лед Б</div>
+                                                            </td>
+                                                            <td class="schedule__cell">
+                                                                <div class="schedule__title">13:30-15:00</div>
+                                                                <div class="schedule__text">Лед Б</div>
+                                                            </td>
+                                                            <td class="schedule__cell">
+                                                                <div class="schedule__title">13:30-15:00</div>
+                                                                <div class="schedule__text">Лед Б</div>
+                                                            </td>
+                                                            <td class="schedule__cell">
+                                                                <div class="schedule__title">13:30-15:00</div>
+                                                                <div class="schedule__text">Лед Б</div>
+                                                            </td>
+                                                            <td class="schedule__cell">
+                                                                <div class="schedule__title">13:30-15:00</div>
+                                                                <div class="schedule__text">Лед Б</div>
+                                                            </td>
+                                                            <td class="schedule__cell">
+                                                                <div class="schedule__title">13:30-15:00</div>
+                                                                <div class="schedule__text">Лед Б</div>
+                                                            </td>
+                                                        </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </div>
+                                                <div class="schedule__content-row">
+                                                    <table class="table table--schedule">
+                                                        <tbody>
+                                                        <tr class="schedule__row">
+                                                            <td class="schedule__cell schedule__first">2004</td>
+                                                            <td class="schedule__cell">
+                                                                <div class="schedule__title">13:30-15:00</div>
+                                                                <div class="schedule__text">Лед Б</div>
+                                                            </td>
+                                                            <td class="schedule__cell">
+                                                                <div class="schedule__title">13:30-15:00</div>
+                                                                <div class="schedule__text">Лед Б</div>
+                                                            </td>
+                                                            <td class="schedule__cell">
+                                                                <div class="schedule__title">13:30-15:00</div>
+                                                                <div class="schedule__text">Лед Б</div>
+                                                            </td>
+                                                            <td class="schedule__cell">
+                                                                <div class="schedule__title">13:30-15:00</div>
+                                                                <div class="schedule__text">Лед Б</div>
+                                                            </td>
+                                                            <td class="schedule__cell">
+                                                                <div class="schedule__title">13:30-15:00</div>
+                                                                <div class="schedule__text">Лед Б</div>
+                                                            </td>
+                                                            <td class="schedule__cell">
+                                                                <div class="schedule__title">13:30-15:00</div>
+                                                                <div class="schedule__text">Лед Б</div>
+                                                            </td>
+                                                            <td class="schedule__cell">
+                                                                <div class="schedule__title">13:30-15:00</div>
+                                                                <div class="schedule__text">Лед Б</div>
+                                                            </td>
+                                                        </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </div>
+                                                <div class="schedule__content-row">
+                                                    <table class="table table--schedule">
+                                                        <tbody>
+                                                        <tr class="schedule__row">
+                                                            <td class="schedule__cell schedule__first">2003</td>
+                                                            <td class="schedule__cell">
+                                                                <div class="schedule__title">13:30-15:00</div>
+                                                                <div class="schedule__text">Лед Б</div>
+                                                            </td>
+                                                            <td class="schedule__cell">
+                                                                <div class="schedule__title">13:30-15:00</div>
+                                                                <div class="schedule__text">Лед Б</div>
+                                                            </td>
+                                                            <td class="schedule__cell">
+                                                                <div class="schedule__title">13:30-15:00</div>
+                                                                <div class="schedule__text">Лед Б</div>
+                                                            </td>
+                                                            <td class="schedule__cell">
+                                                                <div class="schedule__title">13:30-15:00</div>
+                                                                <div class="schedule__text">Лед Б</div>
+                                                            </td>
+                                                            <td class="schedule__cell">
+                                                                <div class="schedule__title">13:30-15:00</div>
+                                                                <div class="schedule__text">Лед Б</div>
+                                                            </td>
+                                                            <td class="schedule__cell">
+                                                                <div class="schedule__title">13:30-15:00</div>
+                                                                <div class="schedule__text">Лед Б</div>
+                                                            </td>
+                                                            <td class="schedule__cell">
+                                                                <div class="schedule__title">13:30-15:00</div>
+                                                                <div class="schedule__text">Лед Б</div>
+                                                            </td>
+                                                        </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
+                                    <a class="button" href="#">Смотреть весь календарь</a>
                                 </div>
-                                <a class="button" href="#">Смотреть весь календарь</a>
+                                <div class="tabs__pane"></div>
                             </div>
-                            <div class="tabs__pane"></div>
                         </div>
                     </div>
                 </section>
@@ -815,48 +821,50 @@
                         </ul>
                     </div>
                 </section>
-                <section class="partners container container--padding">
-                    <h2 class="subtitle">Партнёры</h2>
-                    <ul class="partners__list js-tiny-slider"
-                        data-items="5"
-                        data-start-index="0"
-                        data-loop = "true"
-                        data-autoplay = "true"
-                        data-autoplay-timeout = "4000"
-                        data-speed = "300"
-                        data-mouse-drag = "true"
-                    >
-                        <li class="partners__item">
-                            <a class="partners__link" href="#" target="_blank">
-                                <img class="partners__img" src="img/logo.png" width="130" height="130">
-                            </a>
-                        </li>
-                        <li class="partners__item">
-                            <a class="partners__link" href="#" target="_blank">
-                                <img class="partners__img" src="img/logo.png" width="130" height="130">
-                            </a>
-                        </li>
-                        <li class="partners__item">
-                            <a class="partners__link" href="#" target="_blank">
-                                <img class="partners__img" src="img/logo.png" width="130" height="130">
-                            </a>
-                        </li>
-                        <li class="partners__item">
-                            <a class="partners__link" href="#" target="_blank">
-                                <img class="partners__img" src="img/logo.png" width="130" height="130">
-                            </a>
-                        </li>
-                        <li class="partners__item">
-                            <a class="partners__link" href="#" target="_blank">
-                                <img class="partners__img" src="img/dev-img.png" width="130" height="130">
-                            </a>
-                        </li>
-                        <li class="partners__item">
-                            <a class="partners__link" href="#" target="_blank">
-                                <img class="partners__img" src="img/dev-img.png" width="130" height="130">
-                            </a>
-                        </li>
-                    </ul>
+                <section class="partners white-background">
+                    <div class="container container--padding">
+                        <h2 class="subtitle">Партнёры</h2>
+                        <ul class="partners__list js-tiny-slider"
+                            data-items="5"
+                            data-start-index="0"
+                            data-loop = "true"
+                            data-autoplay = "true"
+                            data-autoplay-timeout = "4000"
+                            data-speed = "300"
+                            data-mouse-drag = "true"
+                        >
+                            <li class="partners__item">
+                                <a class="partners__link" href="#" target="_blank">
+                                    <img class="partners__img" src="img/logo.png" width="130" height="130">
+                                </a>
+                            </li>
+                            <li class="partners__item">
+                                <a class="partners__link" href="#" target="_blank">
+                                    <img class="partners__img" src="img/logo.png" width="130" height="130">
+                                </a>
+                            </li>
+                            <li class="partners__item">
+                                <a class="partners__link" href="#" target="_blank">
+                                    <img class="partners__img" src="img/logo.png" width="130" height="130">
+                                </a>
+                            </li>
+                            <li class="partners__item">
+                                <a class="partners__link" href="#" target="_blank">
+                                    <img class="partners__img" src="img/logo.png" width="130" height="130">
+                                </a>
+                            </li>
+                            <li class="partners__item">
+                                <a class="partners__link" href="#" target="_blank">
+                                    <img class="partners__img" src="img/dev-img.png" width="130" height="130">
+                                </a>
+                            </li>
+                            <li class="partners__item">
+                                <a class="partners__link" href="#" target="_blank">
+                                    <img class="partners__img" src="img/dev-img.png" width="130" height="130">
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
                 </section>
             </div>
         </div>
