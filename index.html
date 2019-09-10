@@ -21,11 +21,11 @@
             <symbol id="login" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 28.04 28.04">
                 <defs><clipPath id="clip-path"><circle cx="14" cy="14.04" r="14" fill="none"/></clipPath></defs><circle cx="14" cy="14.04" r="14" fill="#c24244"/><g clip-path="url(#clip-path)"><rect fill="none" stroke="#1d2a3c" stroke-miterlimit="10" stroke-width="2px" x="10" y="7.04" width="8" height="9" rx="4" ry="4"/><circle fill="none" stroke="#1d2a3c" stroke-miterlimit="10" stroke-width="2px" cx="14" cy="33.04" r="13.17"/></g>
             </symbol>
-            <symbol id="arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 21.64 11.02">
+            <symbol id="arrow-horizontal" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 21.64 11.02">
                 <polygon points="20.17 11 10.82 2.83 1.48 11 0.17 9.49 10.82 0.17 21.48 9.49 20.17 11"/>
             </symbol>
-            <symbol id="arrow-big" xmlns="http://www.w3.org/2000/svg">
-                <path fill="#1d2a3c" d="M24.99 47.485L3.76 24.877 24.978 2.261 23.552 0 .009 24.877 22.84 49z"/>
+            <symbol id="arrow" xmlns="http://www.w3.org/2000/svg">
+                <path d="M24.99 47.485L3.76 24.877 24.978 2.261 23.552 0 .009 24.877 22.84 49z"/>
             </symbol>
             <symbol id="promo-calendar-icon" xmlns="http://www.w3.org/2000/svg">
                 <path fill="#c24244" d="M0 0h505v114.79L252.333 151 0 114.79z"/><path fill="#c24244" d="M90 69h326v87.631L252.892 180 90 156.63z"/>
@@ -87,24 +87,64 @@
                     <h1 class="promo__title">Хоккейная академия им. Владимира Петрова</h1>
                     <div class="promo__wrapper container">
                         <div class="promo-calendar">
-                            <svg class="promo-calendar__icon" width="505" height="180"><use xlink:href="#promo-calendar-icon"></use></svg>
-                            <a class="promo-calendar__title" href="#">Первенство Московской области среди юниоров 2002 г.p.</a>
-                            <p class="promo-calendar__subtitle">Группа А</p>
-                            <div class="promo-calendar__main">
-                                <a class="promo-calendar__team" href="#">
-                                    <img class="promo-calendar__logo" src="img/logo.png" width="110" height="110">
-                                    <p class="promo-calendar__team-name">Академия Петрова</p>
+                            <div class="promo-calendar__navigation js-promo-calendar-controls">
+                                <a class="promo-calendar__arrow promo-calendar__arrow--left">
+                                    <svg class="promo-calendar__icon" width="15" height="40"><use xlink:href="#arrow"></use></svg>
                                 </a>
-                                <a class="promo-calendar__middle" href="#">
-                                    <div class="promo-calendar__date">07.09.2019</div>
-                                    <div class="promo-calendar__middle-main">12:00</div>
-                                </a>
-                                <a class="promo-calendar__team" href="#">
-                                    <img class="promo-calendar__logo" src="img/logo.png" width="110" height="110">
-                                    <p class="promo-calendar__team-name">"Химик" Воскресенск</p>
+                                <a class="promo-calendar__arrow promo-calendar__arrow--right">
+                                    <svg class="promo-calendar__icon" width="15" height="40"><use xlink:href="#arrow"></use></svg>
                                 </a>
                             </div>
-                            <p class="promo-calendar__place">Ледовый дворец "Сокольники"</p>
+                            <ul class="promo-calendar__list js-tiny-slider"
+                                data-controls-container=".js-promo-calendar-controls"
+                                data-controls="true"
+                                data-items="1"
+                                data-start-index="0"
+                                data-loop = "true"
+                                data-speed = "500"
+                                data-mouse-drag = "true"
+                            >
+                                <li class="promo-calendar__item">
+                                    <svg class="promo-calendar__icon-top" width="505" height="180"><use xlink:href="#promo-calendar-icon"></use></svg>
+                                    <a class="promo-calendar__title" href="#">Первенство Московской области среди юниоров 2002 г.p.</a>
+                                    <p class="promo-calendar__subtitle">Группа А</p>
+                                    <div class="promo-calendar__main">
+                                        <a class="promo-calendar__team" href="#">
+                                            <img class="promo-calendar__logo" src="img/logo.png" width="110" height="110">
+                                            <p class="promo-calendar__team-name">Академия Петрова</p>
+                                        </a>
+                                        <a class="promo-calendar__middle" href="#">
+                                            <div class="promo-calendar__date">07.09.2019</div>
+                                            <div class="promo-calendar__middle-main">12:00</div>
+                                        </a>
+                                        <a class="promo-calendar__team" href="#">
+                                            <img class="promo-calendar__logo" src="img/logo.png" width="110" height="110">
+                                            <p class="promo-calendar__team-name">"Химик" Воскресенск</p>
+                                        </a>
+                                    </div>
+                                    <p class="promo-calendar__place">Ледовый дворец "Сокольники"</p>
+                                </li>
+                                <li class="promo-calendar__item">
+                                    <svg class="promo-calendar__icon-top" width="505" height="180"><use xlink:href="#promo-calendar-icon"></use></svg>
+                                    <a class="promo-calendar__title" href="#">Первенство Московской области среди юниоров 2002 г.p.</a>
+                                    <p class="promo-calendar__subtitle">Группа А</p>
+                                    <div class="promo-calendar__main">
+                                        <a class="promo-calendar__team" href="#">
+                                            <img class="promo-calendar__logo" src="img/logo.png" width="110" height="110">
+                                            <p class="promo-calendar__team-name">Академия Петрова</p>
+                                        </a>
+                                        <a class="promo-calendar__middle" href="#">
+                                            <div class="promo-calendar__date">07.09.2019</div>
+                                            <div class="promo-calendar__middle-main">12:00</div>
+                                        </a>
+                                        <a class="promo-calendar__team" href="#">
+                                            <img class="promo-calendar__logo" src="img/logo.png" width="110" height="110">
+                                            <p class="promo-calendar__team-name">"Химик" Воскресенск</p>
+                                        </a>
+                                    </div>
+                                    <p class="promo-calendar__place">Ледовый дворец "Сокольники"</p>
+                                </li>
+                            </ul>
                         </div>
                         <div class="news-slider">
                             <ul class="news-slider__list js-tiny-slider"
@@ -333,10 +373,10 @@
                                     <div class="schedule__content">
                                         <div class="schedule__navigation js-schedule-controls">
                                             <a class="schedule__arrow schedule__arrow--up">
-                                                <svg class="schedule__icon" width="22" height="11"><use xlink:href="img/sprite.svg#arrow"></use></svg>
+                                                <svg class="schedule__icon" width="22" height="11"><use xlink:href="img/sprite.svg#arrow-horizontal"></use></svg>
                                             </a>
                                             <a class="schedule__arrow schedule__arrow--down">
-                                                <svg class="schedule__icon" width="22" height="11"><use xlink:href="img/sprite.svg#arrow"></use></svg>
+                                                <svg class="schedule__icon" width="22" height="11"><use xlink:href="img/sprite.svg#arrow-horizontal"></use></svg>
                                             </a>
                                         </div>
                                         <div class="schedule__content__list js-tiny-slider"
@@ -655,10 +695,10 @@
                     <div class="stats-slider">
                         <div class="stats-slider__navigation js-stats-slider-controls">
                             <a class="stats-slider__arrow stats-slider__arrow--left">
-                                <svg class="stats-slider__icon" width="25" height="49"><use xlink:href="img/sprite.svg#arrow-big"></use></svg>
+                                <svg class="stats-slider__icon" width="25" height="49"><use xlink:href="img/sprite.svg#arrow"></use></svg>
                             </a>
                             <a class="stats-slider__arrow stats-slider__arrow--right">
-                                <svg class="stats-slider__icon" width="25" height="49"><use xlink:href="img/sprite.svg#arrow-big"></use></svg>
+                                <svg class="stats-slider__icon" width="25" height="49"><use xlink:href="img/sprite.svg#arrow"></use></svg>
                             </a>
                         </div>
                         <ul class="stats-slider__list js-tiny-slider"

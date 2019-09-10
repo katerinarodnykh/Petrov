@@ -390,6 +390,17 @@ img {
 }
 
 .promo-calendar {
+  width: 505px;
+  height: 100%;
+  position: relative;
+}
+
+.promo-calendar__list {
+  display: flex;
+  height: 568px;
+}
+
+.promo-calendar__item {
   font-family: "Geometria", "Arial", sans-serif;
   font-weight: 500;
   flex-shrink: 0;
@@ -398,12 +409,45 @@ img {
   background-color: var(--white);
   border-bottom: 8px solid var(--red);
   position: relative;
-  display: flex;
+  display: flex !important;
   flex-direction: column;
   align-items: center;
 }
 
+.promo-calendar__arrow {
+  width: 40px;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  cursor: pointer;
+  z-index: 2;
+}
+
+.promo-calendar__arrow--left {
+  left: 0;
+}
+
+.promo-calendar__arrow--right {
+  right: 0;
+}
+
+.promo-calendar__arrow--right .promo-calendar__icon {
+  transform: scale(-1, 1);
+}
+
 .promo-calendar__icon {
+  fill: rgba(var(--black-opacity), 0.1);
+  transition: 0.2s;
+}
+
+.promo-calendar__arrow:hover .promo-calendar__icon {
+  fill: var(--red);
+  transition: 0.2s;
+}
+
+.promo-calendar__icon-top {
   position: absolute;
   top: 0;
 }
@@ -1090,6 +1134,10 @@ img {
 
 .stats-slider__arrow--right .stats-slider__icon {
   transform: scale(-1, 1);
+}
+
+.stats-slider__icon {
+  fill: var(--main);
 }
 
 /* Медиа на главной */
