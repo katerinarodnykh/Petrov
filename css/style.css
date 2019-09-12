@@ -100,6 +100,17 @@ html {
   min-height: 100vh;
 }
 
+.main-container {
+  margin-top: -180px;
+  position: relative;
+  padding: 180px 0 0 0;
+  background:  rgba(var(--main-opacity), 0.7) url("../img/main-background.png") no-repeat;
+  background-size: cover;
+  background-position: center -130px;
+  background-attachment: fixed;
+  background-blend-mode: overlay;
+}
+
 a {
   text-decoration: none;
   color: #000000;
@@ -122,6 +133,15 @@ img {
 
 .container--padding-sm {
   padding: 50px 15px 80px 15px;
+}
+
+.page-title {
+  padding: 45px 15px 35px 15px;
+  font-family: "Geometria", "Arial", sans-serif;
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 45px;
+  color: var(--white);
 }
 
 .button {
@@ -154,6 +174,10 @@ img {
 
 .white-background {
   background-color: var(--white);
+}
+
+.gray-background {
+  background-color: var(--gray);
 }
 
 .tabs__top .subtitle {
@@ -400,19 +424,8 @@ img {
   margin: 0 0 24px 0;
 }
 
-.main-background {
-  margin-top: -180px;
-  position: relative;
-  padding: 180px 0 0 0;
-  background:  rgba(var(--main-opacity), 0.7) url("../img/main-background.png");
-  background-size: cover;
-  background-position: center -130px;
-  background-attachment: fixed;
-  background-blend-mode: overlay;
-}
-
 .promo {
-  padding: 240px 0 110px;
+  padding: 66px 0 110px 0;
 }
 
 .promo__title {
@@ -1191,7 +1204,7 @@ img {
 /* Анкета для поступления */
 
 .start-form__tabs {
-  padding: 210px 0 0 0;
+  padding: 50px 0 0 0;
 }
 
 .start-form__wrapper {
