@@ -120,6 +120,10 @@ img {
   padding: 90px 15px 80px 15px;
 }
 
+.container--padding-sm {
+  padding: 50px 15px 80px 15px;
+}
+
 .button {
   font-family: "Geometria", "Arial", sans-serif;
   font-weight: 500;
@@ -402,7 +406,7 @@ img {
   padding: 180px 0 0 0;
   background:  rgba(var(--main-opacity), 0.7) url("../img/main-background.png");
   background-size: cover;
-  background-position: center -160px;
+  background-position: center -130px;
   background-attachment: fixed;
   background-blend-mode: overlay;
 }
@@ -1319,6 +1323,126 @@ img {
 .start-form__doc .start-form__upload-text {
   width: 340px;
 }
+
+/* Внутреннее меню */
+
+.inner-menu {
+  background-color: rgba(var(--main-opacity), 0.45);
+  font-family: "Geometria", "Arial", sans-serif;
+  font-weight: 500;
+}
+
+.inner-menu__list {
+  list-style: none;
+  display: flex;
+}
+
+.inner-menu__item {
+  flex-grow: 1;
+}
+
+.inner-menu__link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 60px;
+  color: var(--white);
+  font-size: 12px;
+  letter-spacing: 1.7px;
+  text-transform: uppercase;
+  padding: 0 20px;
+  transition: 0.2s;
+}
+
+.inner-menu__item--active .inner-menu__link {
+  color: var(--red);
+  background-color: var(--white);
+  transition: 0.2s;
+}
+
+/* Шапка турнира, команды */
+
+.head__wrapper {
+  display: flex;
+  font-family: "Geometria", "Arial", sans-serif;
+  font-weight: 500;
+  color: var(--white);
+  padding: 40px 15px;
+}
+
+.head__picture {
+  flex-shrink: 0;
+  background-color: var(--white);
+  margin: 0 100px 0 0;
+}
+
+.head__picture,
+.head__img {
+  display: block;
+  border-radius: 50%;
+}
+
+.head__title {
+  max-width: 90%;
+  display: block;
+  margin: 0 0 36px 0;
+  font-size: 40px;
+  line-height: 45px;
+  color: var(--white);
+}
+
+.head__dates {
+  font-size: 18px;
+  padding: 30px 0 0 0;
+  position: relative;
+}
+
+.head__dates:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 85px;
+  height: 4px;
+  background-color: var(--red);
+}
+
+/* Партнёры */
+
+.list {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.list__item {
+  margin: 0 20px 20px 0;
+  border: 1px solid rgba(var(--black-opacity), 0.2);
+  width: calc((100% - 60px)/4);
+}
+
+.list__item:nth-child(4n) {
+  margin: 0 0 20px 0;
+}
+
+.list__link {
+  display: flex;
+  flex-direction: column;
+  padding: 26px 26px 30px 26px;
+}
+
+.list__title {
+  font-family: "Geometria", "Arial", sans-serif;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 24px;
+  text-align: center;
+  padding: 30px 0 0 0;
+  margin: 26px 0 0 0;
+  border-top: 3px solid var(--red);
+}
+
+
 
 
 

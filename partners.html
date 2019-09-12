@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="utf-8">
+    <title>Хоккейная академия им. Владимира Петрова</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link href="css/normalize.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/tiny-slider.min.css" rel="stylesheet">
+</head>
+<body>
+    <main class="main">
+        <svg class="svg-sprite visually-hidden">
+            <clipPath id="clip-path"><circle cx="14" cy="14.04" r="14" fill="none"/></clipPath>
+            <symbol id="news-date" xmlns="http://www.w3.org/2000/svg">
+                <path fill="#c24244" d="M0 79V0h52v79l-26-8z"/>
+            </symbol>
+            <symbol id="star" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 14.25 13.75">
+                <path d="M7.05.81L5.59 5.37 1 5.3l3.68 2.86-1.48 4.55 3.74-2.78 3.68 2.88-1.38-4.59L13 5.45H8.41z" fill="#c24244" fill-rule="evenodd"/>
+            </symbol>
+            <symbol id="login" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 28.04 28.04">
+                <defs><clipPath id="clip-path"><circle cx="14" cy="14.04" r="14" fill="none"/></clipPath></defs><circle cx="14" cy="14.04" r="14" fill="#c24244"/><g clip-path="url(#clip-path)"><rect fill="none" stroke="#1d2a3c" stroke-miterlimit="10" stroke-width="2px" x="10" y="7.04" width="8" height="9" rx="4" ry="4"/><circle fill="none" stroke="#1d2a3c" stroke-miterlimit="10" stroke-width="2px" cx="14" cy="33.04" r="13.17"/></g>
+            </symbol>
+            <symbol id="arrow-horizontal" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 21.64 11.02">
+                <polygon points="20.17 11 10.82 2.83 1.48 11 0.17 9.49 10.82 0.17 21.48 9.49 20.17 11"/>
+            </symbol>
+            <symbol id="arrow" xmlns="http://www.w3.org/2000/svg">
+                <path d="M24.99 47.485L3.76 24.877 24.978 2.261 23.552 0 .009 24.877 22.84 49z"/>
+            </symbol>
+            <symbol id="promo-calendar-icon" xmlns="http://www.w3.org/2000/svg">
+                <path fill="#c24244" d="M0 0h505v114.79L252.333 151 0 114.79z"/><path fill="#c24244" d="M90 69h326v87.631L252.892 180 90 156.63z"/>
+            </symbol>
+        </svg>
+        <header class="header">
+            <div class="container header__container">
+                <div class="header__top">
+                    <nav class="subnavigation-wrapper">
+                        <ul class="subnavigation">
+                            <li class="subnavigation__item subnavigation__item--button">
+                                <a class="subnavigation__link" href="#">Поступить в академию</a>
+                            </li>
+                            <li class="subnavigation__item subnavigation__item--active">
+                                <a class="subnavigation__link" href="#">Академия</a>
+                            </li>
+                            <li class="subnavigation__item">
+                                <a class="subnavigation__link" href="#">Клуб</a>
+                            </li>
+                            <li class="subnavigation__item">
+                                <a class="subnavigation__link" href="#">Арена</a>
+                            </li>
+                            <li class="subnavigation__item">
+                                <a class="subnavigation__link" href="#">Клубная атрибутика</a>
+                            </li>
+                        </ul>
+                    </nav>
+                    <a class="login" href="#">
+                        <svg class="login__icon" width="28" height="28"><use xlink:href="img/sprite.svg#login"></use></svg>
+                        Личный кабинет
+                    </a>
+                </div>
+                <a class="logo header__logo" href="#">
+                    <img src="img/logo.png" width="144" height="144">
+                </a>
+                <nav class="navigation">
+                    <ul class="navigation__list">
+                        <li class="navigation__item navigation__item--active">
+                            <a class="navigation__link" href="#">Расписание</a>
+                            <svg class="navigation__icon" width="14" height="14"><use xlink:href="img/sprite.svg#star"></use></svg>
+                        </li>
+                        <li class="navigation__item">
+                            <a class="navigation__link" href="#">Турниры</a>
+                        </li>
+                        <li class="navigation__item">
+                            <a class="navigation__link" href="#">Медиа</a>
+                            <svg class="navigation__icon" width="14" height="14"><use xlink:href="img/sprite.svg#star"></use></svg>
+                        </li>
+                        <li class="navigation__item">
+                            <a class="navigation__link" href="#">Трансляции</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        <div class="main-container">
+            <div class="main-content">
+                <div class="white-background">
+                    <ul class="list container container--padding-sm">
+                        <li class="list__item">
+                            <a class="list__link" href="#">
+                                <img class="list__img" src="img/dev-player.png" width="240" height="240">
+                                <p class="list__title">Министерство спорта Российской федерации</p>
+                            </a>
+                        </li>
+                        <li class="list__item">
+                            <a class="list__link" href="#">
+                                <img class="list__img" src="img/dev-player.png" width="240" height="240">
+                                <p class="list__title">Министерство спорта Российской федерации</p>
+                            </a>
+                        </li>
+                        <li class="list__item">
+                            <a class="list__link" href="#">
+                                <img class="list__img" src="img/dev-player.png" width="240" height="240">
+                                <p class="list__title">Министерство спорта Российской федерации</p>
+                            </a>
+                        </li>
+                        <li class="list__item">
+                            <a class="list__link" href="#">
+                                <img class="list__img" src="img/dev-player.png" width="240" height="240">
+                                <p class="list__title">Министерство спорта Российской федерации</p>
+                            </a>
+                        </li>
+                        <li class="list__item">
+                            <a class="list__link" href="#">
+                                <img class="list__img" src="img/dev-player.png" width="240" height="240">
+                                <p class="list__title">Министерство спорта Российской федерации</p>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <footer class="footer">
+            <div class="container footer__container">
+                <nav class="footer__navigation">
+                    <ul class="footer__navigation-list">
+                        <li class="footer__navigation-item">
+                            <a class="footer__navigation-link" href="#">Об академии</a>
+                        </li>
+                        <li class="footer__navigation-item">
+                            <a class="footer__navigation-link" href="#">О Владимире Петрове</a>
+                        </li>
+                        <li class="footer__navigation-item">
+                            <a class="footer__navigation-link" href="#">Арена</a>
+                        </li>
+                    </ul>
+                    <ul class="footer__navigation-list">
+                        <li class="footer__navigation-item">
+                            <a class="footer__navigation-link" href="#">Руководство</a>
+                        </li>
+                        <li class="footer__navigation-item">
+                            <a class="footer__navigation-link" href="#">Партнёры</a>
+                        </li>
+                        <li class="footer__navigation-item">
+                            <a class="footer__navigation-link" href="#">Контакты</a>
+                        </li>
+                    </ul>
+                    <ul class="footer__navigation-list">
+                        <li class="footer__navigation-item">
+                            <a class="footer__navigation-link" href="#">Клуб</a>
+                        </li>
+                        <li class="footer__navigation-item">
+                            <a class="footer__navigation-link" href="#">Турниры</a>
+                        </li>
+                        <li class="footer__navigation-item">
+                            <a class="footer__navigation-link" href="#">Медиа</a>
+                        </li>
+                    </ul>
+                    <ul class="footer__navigation-list">
+                        <li class="footer__navigation-item">
+                            <a class="footer__navigation-link" href="#">Поступить а Академию</a>
+                        </li>
+                        <li class="footer__navigation-item">
+                            <a class="footer__navigation-link" href="#">Расписание</a>
+                        </li>
+                        <li class="footer__navigation-item">
+                            <a class="footer__navigation-link" href="#">Трансляции</a>
+                        </li>
+                        <li class="footer__navigation-item">
+                            <a class="footer__navigation-link" href="#">Клубная атрибутика</a>
+                        </li>
+                    </ul>
+                </nav>
+                <div class="footer__aside">
+                    <a class="login footer__login" href="#">
+                        <svg class="login__icon" width="28" height="28"><use xlink:href="img/sprite.svg#login"></use></svg>
+                        Личный кабинет
+                    </a>
+                    <a class="logo footer__logo" href="#">
+                        <img src="img/logo.png" width="100" height="100">
+                    </a>
+                </div>
+            </div>
+        </footer>
+    </main>
+    <script src="plugins/jquery-3.4.1.min.js"></script>
+    <script src="plugins/tiny-slider.min.js"></script>
+    <script src="js/tiny-slider.js"></script>
+</body>
+</html>
