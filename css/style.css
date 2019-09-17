@@ -180,7 +180,8 @@ img {
   background-color: var(--gray);
 }
 
-.tabs__top .subtitle {
+.tabs__top .subtitle,
+.top .subtitle {
   margin: 0;
 }
 
@@ -188,7 +189,8 @@ img {
   color: var(--white);
 }
 
-.tabs__top {
+.tabs__top,
+.top {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -1019,11 +1021,13 @@ img {
   flex-shrink: 0;
 }
 
-.filters__item--short {
+.filters__item--short,
+.filter--short {
   width: 146px;
 }
 
-.filters__item--medium {
+.filters__item--medium,
+.filter--medium {
   width: 326px;
 }
 
@@ -1570,6 +1574,41 @@ img {
 .composition__value {
   font-size: 14px;
   color: var(--white);
+}
+
+/* Документы */
+
+.documents__list {
+  list-style: none;
+  border-top: 1px solid rgba(var(--black-opacity), 0.2);
+}
+
+.documents__link {
+  display: flex;
+  padding: 30px 0;
+  border-bottom: 1px solid rgba(var(--black-opacity), 0.2);
+}
+
+.documents__icon {
+  flex-shrink: 0;
+}
+
+.documents__content {
+  padding: 0 220px 0 40px;
+}
+
+.documents__date {
+  font-size: 10px;
+  line-height: 18px;
+  color: var(--red);
+  margin: 0 0 10px 0;
+}
+
+.documents__title {
+  font-family: "Geometria", "Arial", sans-serif;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 20px;
 }
 
 

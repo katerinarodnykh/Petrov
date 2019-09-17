@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="utf-8">
+    <title>Хоккейная академия им. Владимира Петрова</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link href="css/normalize.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/tiny-slider.min.css" rel="stylesheet">
+</head>
+<body>
+    <main class="main">
+        <svg class="svg-sprite visually-hidden">
+            <clipPath id="clip-path"><circle cx="14" cy="14.04" r="14" fill="none"/></clipPath>
+            <symbol id="news-date" xmlns="http://www.w3.org/2000/svg">
+                <path fill="#c24244" d="M0 79V0h52v79l-26-8z"/>
+            </symbol>
+            <symbol id="star" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 14.25 13.75">
+                <path d="M7.05.81L5.59 5.37 1 5.3l3.68 2.86-1.48 4.55 3.74-2.78 3.68 2.88-1.38-4.59L13 5.45H8.41z" fill="#c24244" fill-rule="evenodd"/>
+            </symbol>
+            <symbol id="login" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 28.04 28.04">
+                <defs><clipPath id="clip-path"><circle cx="14" cy="14.04" r="14" fill="none"/></clipPath></defs><circle cx="14" cy="14.04" r="14" fill="#c24244"/><g clip-path="url(#clip-path)"><rect fill="none" stroke="#1d2a3c" stroke-miterlimit="10" stroke-width="2px" x="10" y="7.04" width="8" height="9" rx="4" ry="4"/><circle fill="none" stroke="#1d2a3c" stroke-miterlimit="10" stroke-width="2px" cx="14" cy="33.04" r="13.17"/></g>
+            </symbol>
+            <symbol id="arrow-horizontal" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 21.64 11.02">
+                <polygon points="20.17 11 10.82 2.83 1.48 11 0.17 9.49 10.82 0.17 21.48 9.49 20.17 11"/>
+            </symbol>
+            <symbol id="arrow" xmlns="http://www.w3.org/2000/svg">
+                <path d="M24.99 47.485L3.76 24.877 24.978 2.261 23.552 0 .009 24.877 22.84 49z"/>
+            </symbol>
+            <symbol id="promo-calendar-icon" xmlns="http://www.w3.org/2000/svg">
+                <path fill="#c24244" d="M0 0h505v114.79L252.333 151 0 114.79z"/><path fill="#c24244" d="M90 69h326v87.631L252.892 180 90 156.63z"/>
+            </symbol>
+            <symbol id="mail" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 22 17">
+                <path fill="#c24244" fill-rule="evenodd" d="M11 11.79L1 1.92V16h20V1.92l-10 9.87z"/><path fill="#c24244" fill-rule="evenodd" d="M20.14 1H1.84l9.15 9.15L20.14 1z"/>
+            </symbol>
+            <symbol id="address" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 18 24">
+                <path d="M16.26 8.7a7.43 7.43 0 0 0-14.86 0S.88 16 8.83 23c7.95-7 7.43-14.3 7.43-14.3zm-7.43 3.14A3.14 3.14 0 1 1 12 8.7a3.15 3.15 0 0 1-3.17 3.14z" fill="#c24244"/>
+            </symbol>
+            <symbol id="phone" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 21.88">
+                <path d="M14.13.79c-.21.12-.33.45-.57.94S12.12 4.66 12 5.11s-.24.78.25 1.11 1.55 1.28 1.88 1.57.37.57.12 1.07a13.44 13.44 0 0 1-2.43 4 14.84 14.84 0 0 1-3.4 2.75c-.49.28-.75 0-1-.22s-.57-.49-.85-.74a3.3 3.3 0 0 0-.82-.49.87.87 0 0 0-.86 0c-.25.12-2.66 1.11-3.64 1.52s-.94.82-.94 1.11a7.49 7.49 0 0 0 .08.82A2.78 2.78 0 0 0 1 19.07a5.45 5.45 0 0 0 4.08 1.72 9.46 9.46 0 0 0 5.07-2c.33-.25 5.44-3.42 7.4-8.44s1.31-5 1.23-5.93-1.18-2.93-2.32-3.34a3.94 3.94 0 0 0-2.33-.29zm0 0" fill="#c24244" fill-rule="evenodd" />
+            </symbol>
+            <symbol id="doc" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 70 79">
+                <style>.doc-1{fill:#fff}.doc-2{opacity:.58;fill:none;stroke:#202e43;stroke-miterlimit:10}</style><g><path fill="#14195e" d="M0 69l8 8v-8z"/><path fill="#dadee0" d="M70 79H6V0h49l15 17z"/><path fill="#c2cacc" d="M55 0v17h15z"/><path fill="#2e3192" d="M45.9 69H0V47h45.9L53 58z"/><path class="doc-1" d="M17.3 62.3h-3v-8.4h3c1.3 0 2.4.4 3.3 1.2.9.8 1.3 1.8 1.3 3s-.4 2.3-1.3 3c-.8.8-1.9 1.2-3.3 1.2zm-1.6-7.2v6h1.5c1.1 0 1.9-.3 2.5-.8.6-.5.9-1.3.9-2.2 0-.9-.3-1.6-.9-2.2-.6-.5-1.4-.8-2.5-.8h-1.5zM30.8 61.2c-.8.8-1.8 1.2-3.1 1.2s-2.3-.4-3.1-1.2c-.8-.8-1.2-1.9-1.2-3.1 0-1.2.4-2.3 1.2-3.1.8-.8 1.8-1.3 3.1-1.3s2.3.4 3.1 1.3c.8.8 1.2 1.9 1.2 3.1 0 1.3-.4 2.3-1.2 3.1zm-5.2-.8c.6.6 1.3.9 2.1.9s1.5-.3 2.1-.9c.6-.6.9-1.4.9-2.2 0-.9-.3-1.6-.9-2.2-.6-.6-1.3-.9-2.1-.9s-1.5.3-2.1.9c-.6.6-.8 1.3-.8 2.2 0 .8.2 1.6.8 2.2zM37.9 62.5c-1.3 0-2.3-.4-3.2-1.2-.8-.8-1.3-1.9-1.3-3.1 0-1.3.4-2.3 1.3-3.1.8-.8 1.9-1.2 3.2-1.2.9 0 1.6.2 2.3.6v1.3c-.7-.4-1.4-.7-2.3-.7-.9 0-1.6.3-2.2.9-.6.6-.9 1.3-.9 2.2 0 .9.3 1.7.9 2.2.6.6 1.3.9 2.2.9 1 0 1.8-.3 2.4-.8v1.3c-.6.5-1.5.7-2.4.7z"/><g opacity=".48"><path class="doc-2" d="M14 26.5h45M14 32.5h45M14 38.5h38.8"/></g></g>
+            </symbol>
+            <symbol id="docx" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 70 79">
+                <style>.docx-1{fill:#fff}.docx-2{opacity:.58;fill:none;stroke:#202e43;stroke-miterlimit:10}</style><g><path fill="#14195e" d="M0 69l8 8v-8z"/><path fill="#dadee0" d="M70 79H6V0h49l15 17z"/><path fill="#c2cacc" d="M55 0v17h15z"/><path fill="#2e3192" d="M52.9 69H0V47h52.9L60 58z"/><path class="docx-1" d="M17.3 62.3h-3v-8.4h3c1.3 0 2.4.4 3.3 1.2.9.8 1.3 1.8 1.3 3s-.4 2.3-1.3 3c-.8.8-1.9 1.2-3.3 1.2zm-1.6-7.2v6h1.5c1.1 0 1.9-.3 2.5-.8.6-.5.9-1.3.9-2.2 0-.9-.3-1.6-.9-2.2-.6-.5-1.4-.8-2.5-.8h-1.5zM30.8 61.2c-.8.8-1.8 1.2-3.1 1.2s-2.3-.4-3.1-1.2c-.8-.8-1.2-1.9-1.2-3.1 0-1.2.4-2.3 1.2-3.1.8-.8 1.8-1.3 3.1-1.3s2.3.4 3.1 1.3c.8.8 1.2 1.9 1.2 3.1 0 1.3-.4 2.3-1.2 3.1zm-5.2-.8c.6.6 1.3.9 2.1.9s1.5-.3 2.1-.9c.6-.6.9-1.4.9-2.2 0-.9-.3-1.6-.9-2.2-.6-.6-1.3-.9-2.1-.9s-1.5.3-2.1.9c-.6.6-.8 1.3-.8 2.2 0 .8.2 1.6.8 2.2zM37.9 62.5c-1.3 0-2.3-.4-3.2-1.2-.8-.8-1.3-1.9-1.3-3.1 0-1.3.4-2.3 1.3-3.1.8-.8 1.9-1.2 3.2-1.2.9 0 1.6.2 2.3.6v1.3c-.7-.4-1.4-.7-2.3-.7-.9 0-1.6.3-2.2.9-.6.6-.9 1.3-.9 2.2 0 .9.3 1.7.9 2.2.6.6 1.3.9 2.2.9 1 0 1.8-.3 2.4-.8v1.3c-.6.5-1.5.7-2.4.7zM42.7 62.3h-1.5l3.3-4.5-2.8-3.9h1.6l2 2.8 2-2.8h1.5L46 57.8l3.3 4.6h-1.6l-2.5-3.5-2.5 3.4z"/><g opacity=".48"><path class="docx-2" d="M14 26.5h45M14 32.5h45M14 38.5h38.8"/></g></g>
+            </symbol>
+            <symbol id="jpg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 70 79">
+                <style>.jpg-1{fill:none;stroke:#202e43;stroke-miterlimit:10}</style><g><path fill="#57165b" d="M0 69l8 8v-8z"/><path fill="#dadee0" d="M70 79H6V0h49l15 17z"/><g opacity=".22"><path class="jpg-1" d="M13.5 24.5h46v33h-46z"/><path class="jpg-1" d="M13.5 44.9l12-9.4 8 6 17-12 9 6"/><circle class="jpg-1" cx="33" cy="31" r="2.5"/></g><path fill="#c2cacc" d="M55 0v17h15z"/><path fill="#873389" d="M45.9 69H0V47h45.9L53 58z"/><text transform="translate(14 62)" font-size="12" font-family="Geometria" font-weight="500" fill="#fff">JPG</text></g>
+            </symbol>
+            <symbol id="jpeg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 70 79">
+                <style>.jpeg-1{fill:none;stroke:#202e43;stroke-miterlimit:10}</style><g><path fill="#57165b" d="M0 69l8 8v-8z"/><path fill="#dadee0" d="M70 79H6V0h49l15 17z"/><g opacity=".22"><path class="jpeg-1" d="M13.5 24.5h46v33h-46z"/><path class="jpeg-1" d="M13.5 44.9l12-9.4 8 6 17-12 9 6"/><circle class="jpeg-1" cx="33" cy="31" r="2.5"/></g><path fill="#c2cacc" d="M55 0v17h15z"/><path fill="#873389" d="M52.9 69H0V47h52.9L60 58z"/><text transform="translate(14 62)" font-size="12" font-family="Geometria" font-weight="500" fill="#fff">JPEG</text></g>
+            </symbol>
+            <symbol id="png" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 70 79">
+                <style>.png-1{fill:none;stroke:#202e43;stroke-miterlimit:10}</style><g><path fill="#a03012" d="M0 69l8 8v-8z"/><path fill="#dadee0" d="M70 79H6V0h49l15 17z"/><g opacity=".22"><path class="png-1" d="M13.5 24.5h46v33h-46z"/><path class="png-1" d="M13.5 44.9l12-9.4 8 6 17-12 9 6"/><circle class="png-1" cx="33" cy="31" r="2.5"/></g><path fill="#c2cacc" d="M55 0v17h15z"/><path fill="#db6719" d="M45.9 69H0V47h45.9L53 58z"/><text transform="translate(14 62)" font-size="12" font-family="Geometria" font-weight="500" fill="#fff">PNG</text></g>
+            </symbol>
+            <symbol id="pdf" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 70 79">
+                <style>.pdf-1{fill:#fff}.pdf-2{opacity:.58;fill:none;stroke:#202e43;stroke-miterlimit:10}</style><g><path fill="#8e0707" d="M0 69l8 8v-8z"/><path fill="#dadee0" d="M70 79H6V0h49l15 17z"/><path fill="#c2cacc" d="M55 0v17h15z"/><path fill="#ba0909" d="M45.9 69H0V47h45.9L53 58z"/><path class="pdf-1" d="M15.7 62.3h-1.3v-8.4H18c.9 0 1.6.2 2.1.7.5.4.8 1 .8 1.8s-.3 1.3-.8 1.8-1.2.7-2.1.7h-2.3v3.4zm0-7.2v2.5h2.2c.5 0 .9-.1 1.2-.3.3-.2.4-.5.4-.9s-.1-.7-.4-.9c-.3-.2-.7-.3-1.2-.3h-2.2zM25.3 62.3h-3v-8.4h3c1.3 0 2.4.4 3.3 1.2.9.8 1.3 1.8 1.3 3s-.4 2.3-1.3 3c-.9.8-2 1.2-3.3 1.2zm-1.7-7.2v6h1.5c1.1 0 1.9-.3 2.5-.8.6-.5.9-1.3.9-2.2 0-.9-.3-1.6-.9-2.2-.6-.5-1.4-.8-2.5-.8h-1.5zM33 62.3h-1.3v-8.4h6v1.2H33v2.2h3.7v1.2H33v3.8z"/><g opacity=".48"><path class="pdf-2" d="M14 26.5h45M14 32.5h45M14 38.5h38.8"/></g></g>
+            </symbol>
+            <symbol id="xls" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 70 79">
+                <style>.xls-1{fill:#fff}.xls-2{opacity:.58;fill:none;stroke:#202e43;stroke-miterlimit:10}</style><g><path fill="#01331a" d="M0 69l8 8v-8z"/><path fill="#dadee0" d="M70 79H6V0h49l15 17z"/><path fill="#c2cacc" d="M55 0v17h15z"/><path fill="#006837" d="M45.9 69H0V47h45.9L53 58z"/><path class="xls-1" d="M15.1 62.3h-1.5l3.3-4.5-2.8-3.9h1.6l2 2.8 2-2.8h1.5l-2.8 3.8 3.3 4.6h-1.6l-2.5-3.5-2.5 3.5zM28.8 62.3H23v-8.4h1.3v7.2h4.5v1.2zM32.8 62.5c-1.3 0-2.3-.3-3.2-.9v-1.4c.3.3.8.5 1.4.8.6.2 1.2.3 1.7.3.6 0 1-.1 1.4-.3.4-.2.5-.5.5-.9 0-.3-.1-.6-.4-.8-.1-.1-.2-.2-.4-.3-.2-.1-.6-.2-1.2-.4h-.2c-.5-.1-.8-.2-1.1-.3-.2-.1-.5-.2-.8-.4-.6-.4-.9-.9-.9-1.7 0-.7.3-1.3.8-1.7.5-.4 1.3-.6 2.2-.6 1 0 1.9.2 2.7.7v1.3c-.9-.5-1.7-.8-2.7-.8-.6 0-1 .1-1.3.3-.3.2-.4.5-.4.8 0 .3.2.5.5.8 0 0 .1.1.2.1s.2.1.3.1c.1 0 .2.1.2.1l1 .3c.6.2 1.1.4 1.5.6.7.4 1.1 1 1.2 1.9 0 .8-.3 1.4-.9 1.8-.4.4-1.1.6-2.1.6z"/><g opacity=".48"><path class="xls-2" d="M13.5 24.5h46v16h-46zM28.5 25v15M44.5 25v15M14 32.5h45"/></g></g>
+            </symbol>
+            <symbol id="xlsx" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 70 79">
+                <style>.xlsx-1{fill:#fff}.xlsx-2{opacity:.58;fill:none;stroke:#202e43;stroke-miterlimit:10}</style><g><path fill="#01331a" d="M0 69l8 8v-8z"/><path fill="#dadee0" d="M70 79H6V0h49l15 17z"/><path fill="#c2cacc" d="M55 0v17h15z"/><path fill="#006837" d="M52.9 69H0V47h52.9L60 58z"/><path class="xlsx-1" d="M15.1 62.3h-1.5l3.3-4.5-2.8-3.9h1.6l2 2.8 2-2.8h1.5l-2.8 3.8 3.3 4.6h-1.6l-2.5-3.5-2.5 3.5zM28.8 62.3H23v-8.4h1.3v7.2h4.5v1.2zM32.8 62.5c-1.3 0-2.3-.3-3.2-.9v-1.4c.3.3.8.5 1.4.8.6.2 1.2.3 1.7.3.6 0 1-.1 1.4-.3.4-.2.5-.5.5-.9 0-.3-.1-.6-.4-.8-.1-.1-.2-.2-.4-.3-.2-.1-.6-.2-1.2-.4h-.2c-.5-.1-.8-.2-1.1-.3-.2-.1-.5-.2-.8-.4-.6-.4-.9-.9-.9-1.7 0-.7.3-1.3.8-1.7.5-.4 1.3-.6 2.2-.6 1 0 1.9.2 2.7.7v1.3c-.9-.5-1.7-.8-2.7-.8-.6 0-1 .1-1.3.3-.3.2-.4.5-.4.8 0 .3.2.5.5.8 0 0 .1.1.2.1s.2.1.3.1c.1 0 .2.1.2.1l1 .3c.6.2 1.1.4 1.5.6.7.4 1.1 1 1.2 1.9 0 .8-.3 1.4-.9 1.8-.4.4-1.1.6-2.1.6zM38.3 62.3h-1.5l3.3-4.5-2.8-3.9h1.6l2 2.8 2-2.8h1.5l-2.8 3.8 3.3 4.6h-1.6l-2.5-3.5-2.5 3.5z"/><g opacity=".48"><path class="xlsx-2" d="M13.5 24.5h46v16h-46zM28.5 25v15M44.5 25v15M14 32.5h45"/></g></g>
+            </symbol>
+        </svg>
+        <header class="header">
+            <div class="container header__container">
+                <div class="header__top">
+                    <nav class="subnavigation-wrapper">
+                        <ul class="subnavigation">
+                            <li class="subnavigation__item subnavigation__item--button">
+                                <a class="subnavigation__link" href="#">Поступить в академию</a>
+                            </li>
+                            <li class="subnavigation__item subnavigation__item--active">
+                                <a class="subnavigation__link" href="#">Академия</a>
+                            </li>
+                            <li class="subnavigation__item">
+                                <a class="subnavigation__link" href="#">Клуб</a>
+                            </li>
+                            <li class="subnavigation__item">
+                                <a class="subnavigation__link" href="#">Арена</a>
+                            </li>
+                            <li class="subnavigation__item">
+                                <a class="subnavigation__link" href="#">Клубная атрибутика</a>
+                            </li>
+                        </ul>
+                    </nav>
+                    <a class="login" href="#">
+                        <svg class="login__icon" width="28" height="28"><use xlink:href="img/sprite.svg#login"></use></svg>
+                        Личный кабинет
+                    </a>
+                </div>
+                <a class="logo header__logo" href="#">
+                    <img src="img/logo.png" width="144" height="144">
+                </a>
+                <nav class="navigation">
+                    <ul class="navigation__list">
+                        <li class="navigation__item navigation__item--active">
+                            <a class="navigation__link" href="#">Расписание</a>
+                            <svg class="navigation__icon" width="14" height="14"><use xlink:href="img/sprite.svg#star"></use></svg>
+                        </li>
+                        <li class="navigation__item">
+                            <a class="navigation__link" href="#">Турниры</a>
+                        </li>
+                        <li class="navigation__item">
+                            <a class="navigation__link" href="#">Медиа</a>
+                            <svg class="navigation__icon" width="14" height="14"><use xlink:href="img/sprite.svg#star"></use></svg>
+                        </li>
+                        <li class="navigation__item">
+                            <a class="navigation__link" href="#">Трансляции</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        <div class="main-container">
+            <h1 class="page-title container">Документы</h1>
+            <div class="inner-menu">
+                <ul class="inner-menu__list container">
+                    <li class="inner-menu__item inner-menu__item--active">
+                        <a class="inner-menu__link" href="#">Приказы</a>
+                    </li>
+                    <li class="inner-menu__item">
+                        <a class="inner-menu__link" href="#">Учредительные документы</a>
+                    </li>
+                    <li class="inner-menu__item">
+                        <a class="inner-menu__link" href="#">Документы турниров</a>
+                    </li>
+                    <li class="inner-menu__item">
+                        <a class="inner-menu__link" href="#">Прочее</a>
+                    </li>
+                </ul>
+            </div>
+            <section class="documents white-background">
+                <div class="container container--padding">
+                    <!--Приказы-->
+                    <div class="tabs">
+                        <div class="tabs__top">
+                            <div class="filter filter--short">
+                                Селектор сезона
+                            </div>
+                            <ul class="tabs__navigation">
+                                <li class="tabs__item tabs__item--active">
+                                    <a class="tabs__link" href="#">Внутренние приказы</a>
+                                </li>
+                                <li class="tabs__item">
+                                    <a class="tabs__link" href="#">Внешние приказы</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="tabs__content">
+                            <div class="tabs__pane">
+                                <ul class="documents__list">
+                                    <li class="documents__item">
+                                        <a class="documents__link" href>
+                                            <svg class="documents__icon" width="70" height="79"><use xlink:href="img/sprite.svg#doc"></use></svg>
+                                            <div class="documents__content">
+                                                <p class="documents__date">12 / 01 / 2019</p>
+                                                <p class="documents__title">В первый же год Академия откроет двери для восьми возрастных групп.</p>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="documents__item">
+                                        <a class="documents__link" href>
+                                            <svg class="documents__icon" width="70" height="79"><use xlink:href="img/sprite.svg#doc"></use></svg>
+                                            <div class="documents__content">
+                                                <p class="documents__date">12 / 01 / 2019</p>
+                                                <p class="documents__title">В первый же год Академия откроет двери для восьми возрастных групп. В первый же год Академия откроет двери для восьми возрастных групп В первый же год Академия откроет двери для восьми возрастных групп В первый же год Академия откроет двери для восьми возрастных групп</p>
+                                            </div>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <!--Остальные документы-->
+                    <div class="top">
+                        <div class="filter filter--short">
+                            Селектор сезона
+                        </div>
+                    </div>
+                    <ul class="documents__list">
+                        <li class="documents__item">
+                            <a class="documents__link" href>
+                                <svg class="documents__icon" width="70" height="79"><use xlink:href="#doc"></use></svg>
+                                <div class="documents__content">
+                                    <p class="documents__date">12 / 01 / 2019</p>
+                                    <p class="documents__title">В первый же год Академия откроет двери для восьми возрастных групп.</p>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="documents__item">
+                            <a class="documents__link" href>
+                                <svg class="documents__icon" width="70" height="79"><use xlink:href="#doc"></use></svg>
+                                <div class="documents__content">
+                                    <p class="documents__date">12 / 01 / 2019</p>
+                                    <p class="documents__title">В первый же год Академия откроет двери для восьми возрастных групп. В первый же год Академия откроет двери для восьми возрастных групп В первый же год Академия откроет двери для восьми возрастных групп В первый же год Академия откроет двери для восьми возрастных групп</p>
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
+                    <!--Все виды документов-->
+                    <svg class="" width="70" height="79"><use xlink:href="img/sprite.svg#doc"></use></svg>
+                    <svg class="" width="70" height="79"><use xlink:href="img/sprite.svg#docx"></use></svg>
+                    <svg class="" width="70" height="79"><use xlink:href="img/sprite.svg#jpg"></use></svg>
+                    <svg class="" width="70" height="79"><use xlink:href="img/sprite.svg#jpeg"></use></svg>
+                    <svg class="" width="70" height="79"><use xlink:href="img/sprite.svg#png"></use></svg>
+                    <svg class="" width="70" height="79"><use xlink:href="img/sprite.svg#pdf"></use></svg>
+                    <svg class="" width="70" height="79"><use xlink:href="img/sprite.svg#xls"></use></svg>
+                    <svg class="" width="70" height="79"><use xlink:href="img/sprite.svg#xlsx"></use></svg>
+                </div>
+            </section>
+        </div>
+        <footer class="footer">
+            <div class="container footer__container">
+                <nav class="footer__navigation">
+                    <ul class="footer__navigation-list">
+                        <li class="footer__navigation-item">
+                            <a class="footer__navigation-link" href="#">Об академии</a>
+                        </li>
+                        <li class="footer__navigation-item">
+                            <a class="footer__navigation-link" href="#">О Владимире Петрове</a>
+                        </li>
+                        <li class="footer__navigation-item">
+                            <a class="footer__navigation-link" href="#">Арена</a>
+                        </li>
+                    </ul>
+                    <ul class="footer__navigation-list">
+                        <li class="footer__navigation-item">
+                            <a class="footer__navigation-link" href="#">Руководство</a>
+                        </li>
+                        <li class="footer__navigation-item">
+                            <a class="footer__navigation-link" href="#">Партнёры</a>
+                        </li>
+                        <li class="footer__navigation-item">
+                            <a class="footer__navigation-link" href="#">Контакты</a>
+                        </li>
+                    </ul>
+                    <ul class="footer__navigation-list">
+                        <li class="footer__navigation-item">
+                            <a class="footer__navigation-link" href="#">Клуб</a>
+                        </li>
+                        <li class="footer__navigation-item">
+                            <a class="footer__navigation-link" href="#">Турниры</a>
+                        </li>
+                        <li class="footer__navigation-item">
+                            <a class="footer__navigation-link" href="#">Медиа</a>
+                        </li>
+                    </ul>
+                    <ul class="footer__navigation-list">
+                        <li class="footer__navigation-item">
+                            <a class="footer__navigation-link" href="#">Поступить а Академию</a>
+                        </li>
+                        <li class="footer__navigation-item">
+                            <a class="footer__navigation-link" href="#">Расписание</a>
+                        </li>
+                        <li class="footer__navigation-item">
+                            <a class="footer__navigation-link" href="#">Трансляции</a>
+                        </li>
+                        <li class="footer__navigation-item">
+                            <a class="footer__navigation-link" href="#">Клубная атрибутика</a>
+                        </li>
+                    </ul>
+                </nav>
+                <div class="footer__aside">
+                    <a class="login footer__login" href="#">
+                        <svg class="login__icon" width="28" height="28"><use xlink:href="img/sprite.svg#login"></use></svg>
+                        Личный кабинет
+                    </a>
+                    <a class="logo footer__logo" href="#">
+                        <img src="img/logo.png" width="100" height="100">
+                    </a>
+                </div>
+            </div>
+        </footer>
+    </main>
+    <script src="plugins/jquery-3.4.1.min.js"></script>
+    <script src="plugins/tiny-slider.min.js"></script>
+    <script src="js/tiny-slider.js"></script>
+</body>
+</html>
